@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{21BF2796-C250-47AC-ACC2-DC87F91D4287}|Default">
+  <MonoDevelop.Ide.ItemProperties.PublikDisplay PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/wwwroot/css/site.css">
+    <Files>
+      <File FileName="HtmlLayout/Pages/Index.cshtml" Line="12" Column="37" />
+      <File FileName="HtmlLayout/Pages/Privacy.cshtml" Line="6" Column="1" />
+      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="43" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HtmlLayout" expanded="True">
+            <Node name="HtmlLayout" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="site.css" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{21BF2796-C250-47AC-ACC2-DC87F91D4287}|HtmlLayout">
+  <MonoDevelop.Ide.ItemProperties.PublikDisplay PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/Pages/Index.cshtml">
+    <Files>
+      <File FileName="HtmlLayout/Pages/Index.cshtml" Line="33" Column="30" />
+      <File FileName="HtmlLayout/wwwroot/css/site.css" />
+      <File FileName="HtmlLayout/Pages/Settings.cshtml" />
+      <File FileName="HtmlLayout/Pages/Shared/_Layout.cshtml" />
+      <File FileName="HtmlLayout/Pages/System.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PublikDisplay" expanded="True">
+            <Node name="PublikDisplay" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

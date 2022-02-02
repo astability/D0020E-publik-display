@@ -1,0 +1,75 @@
+﻿body, html {
+    padding:0px;
+    margin: 0px;
+    height:100%;
+}
+
+/* Layout */
+.mainContainer {
+    display: flex;
+    padding: 0px;
+}
+
+.infoContainer {
+    flex: 85%;
+    margin: 0px;
+}
+
+.navContainer {
+    flex: 15%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.navButtonGroup button {
+    display:block;
+    width:100%;
+    height:25vh;
+    background-color: #CCC;
+    border: 2px solid black;
+    color: white;
+    font-size: 40px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+
+.navButtonGroup button:hover {
+    background-color:hotpink;
+    color: antiquewhite;
+}
+
+a:link,
+a:visited {
+    color:white;
+    text-decoration:none;
+}
+
+.buttonCurrent {
+    background-color:goldenrod !important;
+    color:black !important;
+}
+
+
+
+.navButtonGroup button:not(:last-child) {
+    border-bottom: none;
+}
+
+
+/* Home css*/
+.infoPic {
+    background-color:cornflowerblue;
+    height:600px;
+
+}
+
+.infoText {
+    height: auto;
+    font-size:20px;
+    border: 2px red;
+    background-color: papayawhip;
+}
+
+.material-icons.bigSize{
+    font-size: 72px;
+}

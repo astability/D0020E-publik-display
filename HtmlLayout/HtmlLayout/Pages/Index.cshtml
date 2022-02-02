@@ -1,0 +1,48 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="mainContainer">
+    <div class="infoContainer">
+        <div class="infoPic">
+
+        </div>
+        <div class="infoText">
+            <p> Här kommer det finnas information senare</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque, turpis sed pulvinar sollicitudin,
+            nibh turpis luctus mauris, id mattis diam diam nec lectus. Maecenas ullamcorper vitae risus vel auctor.
+            Vestibulum pharetra, sem sed luctus fringilla, nisl dolor finibus libero, et sodales magna lectus quis eros.
+            Nullam a odio eget erat malesuada auctor. Sed laoreet rutrum elementum. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Donec in bibendum nulla. Etiam lacus diam, luctus ut
+            purus sit amet, rhoncus porttitor urna. Pellentesque finibus libero consectetur euismod pulvinar. Proin tristique
+            a neque vel porttitor. Aliquam pharetra suscipit nulla quis volutpat. Sed efficitur elit magna, aliquam finibus orci
+            posuere ut. Morbi dictum felis velit, nec pharetra ante hendrerit vitae. Donec tincidunt tellus enim, sed interdum
+            turpis gravida at.</p>
+        </div>
+    </div>
+    <div class="navContainer">
+        <div class="navButtonGroup">
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <button class="buttonCurrent">
+                <span class="material-icons bigSize">home</span>
+                <br>Hem</button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/System">
+                <button>
+                <span class="material-icons bigSize">dvr</span>
+                <br>System</button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/Settings">
+                <button>
+                    <span class="material-icons bigSize">settings</span>
+                <br>Inställningar</button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">logout</span>
+                <br>Logga ut</button>
+            </a>
+        </div>
+    </div>
+</div>

@@ -2,26 +2,80 @@
 @{
     ViewData["Title"] = "System";
 }
+@{
+    string[,] testData = {
+        {"Fibaro","2"},
+        {"Widefind","1"},
+        {"Hue","0"},
+        {"Soffan","2" },
+        {"Köket", "1" },
+        {"Toa", "0" },
+        {"Dörr","2" },
+        {"Spis", "1" },
+        {"Kamera","2" },
+        {"Utkik", "1" },
+        {"Köket", "1" },
+        {"Toa", "0" },
+        {"Dörr","2" },
+        {"Spis", "1" },
+        {"Kamera","2" },
+        {"Utkik", "1" },
+        {"Dörr","2" },
+        {"Spis", "1" },
+        {"Kamera","2" },
+        {"Utkik", "1" },
+        {"Köket", "1" },
+        {"Toa", "0" },
+        {"Dörr","2" },
+        {"Spis", "1" },
+        {"Kamera","2" },
+        {"Utkik", "1" },
+        {"Windows","0" }
+    };
+    int lengthIndex = testData.GetLength(0);
+    int i = 0;
+}
 
 <div class="mainContainer">
-    <div class="infoContainer">
-        <p> Här kommer det finnas status på systemen senare</p>
+    <div class="infoContainer overflow">
+        @while(i<lengthIndex)
+        {
+            <a asp-area="" asp-page="/Index">
+                <div class="systemContainer">
+                    <h2 style="color:black">@testData[i, 0]</h2>
+                    @if (string.Equals(testData[i, 1], "2"))
+                    {
+                        <span class="statusCircle green"></span>
+                    }
+                    else if (string.Equals(testData[i, 1], "1"))
+                    {
+                        <div class="statusCircle yellow"></div>
+                    }
+                    else
+                    {
+                        <div class="statusCircle red"></div>
+                    }
+                    <p>Klicka för mer info</p>
+                </div>
+            </a>
+            i++;
+        }
     </div>
     <div class="navContainer">
         <div class="navButtonGroup">
-            <a class="navbar-brand" asp-area="" asp-page="/Index">
+            <a asp-area="" asp-page="/Index">
                 <button>
                     <span class="material-icons bigSize">home</span>
                     <br>Hem
                 </button>
             </a>
-            <a class="navbar-brand" asp-area="" asp-page="/System">
+            <a asp-area="" asp-page="/System">
                 <button class="buttonCurrent">
                     <span class="material-icons bigSize">dvr</span>
                     <br>System
                 </button>
             </a>
-            <a class="navbar-brand" asp-area="" asp-page="/Settings">
+            <a asp-area="" asp-page="/Settings">
                 <button>
                     <span class="material-icons bigSize">settings</span>
                     <br>Inställningar

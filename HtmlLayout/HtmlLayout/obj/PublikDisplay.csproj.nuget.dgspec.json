@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emillindstrom/Projects/HtmlLayout/HtmlLayout/PublikDisplay.csproj": {}
+    "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj": {}
   },
   "projects": {
-    "/Users/emillindstrom/Projects/HtmlLayout/HtmlLayout/PublikDisplay.csproj": {
+    "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emillindstrom/Projects/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
+        "projectUniqueName": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
         "projectName": "PublikDisplay",
-        "projectPath": "/Users/emillindstrom/Projects/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
+        "projectPath": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
         "packagesPath": "/Users/emillindstrom/.nuget/packages/",
-        "outputPath": "/Users/emillindstrom/Projects/HtmlLayout/HtmlLayout/obj/",
+        "outputPath": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/emillindstrom/.config/NuGet/NuGet.Config"
@@ -41,6 +41,10 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
             }
           },
           "imports": [

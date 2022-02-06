@@ -31,20 +31,26 @@
 
 <div class="mainContainer">
     <div class="infoContainer">
-        <div class="systemInfo">
+        <div class="systemLogs">
+            <h1>Hola amigos!</h1>
+        </div>
+        <div class="systemComponentList">
             <p>@Model.message</p>
             @while (j < configAmount)
             {
+                i = 0;
                 @while (i < lengthIndex)
                 {
-                    <div class="systemContainer">
-                        @if (string.Equals(testData[i, 0], "BEACON"))
-                        {
-                            <span class="statusCircle green"></span>
-                        }
-                    </div>
+                    @if (string.Equals(testData[i, 0], testConfig[j]))
+                    {
+                        <div class="systemComponent">
+                            <p> Typ: @testData[i, 0] ID: @testData[i, 1]</p>
+                            <p> Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
+                        </div>
+                    }
                     i++;
                 }
+                j++;
             }
         </div>
     </div>

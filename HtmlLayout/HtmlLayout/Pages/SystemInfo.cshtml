@@ -35,14 +35,50 @@
         <div class="splitInfo">
             <div class="systemInfo">
                 <a asp-page="/System">
-                    <span class="material-icons bigSize" style="line-height:20vh;vertical-align:middle;float:left;margin-left:20px">west</span>
+                    <span class="material-icons systemBackArrow">west</span>
                 </a>
                 <h3>System logs</h3>
+            </div>
+            <button type="button" class="collapsible">Viktiga loggar</button>
+            <div class="content">
+                <h3>Här kommer det finnas viktigare sparade loggar</h3>
+            </div>
+            <button type="button" class="collapsible">Alla loggar</button>
+            <div class="content">
+                <h3>Här kommer alla loggar som sparas finnas </h3>
             </div>
         </div>
         <div class="splitInfo">
             <div class="systemInfo">
-                <p>Höger</p>
+                <div style="width:50%;height:20vh;float:left;font-family:system-ui;">
+                    <h3 style="font-size:36px;margin-top:50px;">Widefind</h3>
+                </div>
+                <div style="width:50%;height:20vh;float:left;">
+                    <p style="font-size:24px">Allmän status:</p>
+                    <span class="statusCircle yellow" style="width:65px;height:65px;"></span>
+                </div>
+            </div>
+            <div class="systemInfo" style="height:10vh;padding-bottom:6px;">
+                <h1 style="font-size:36px;font-family:system-ui;">Enheter</h1>
+            </div>
+            <div class="systemComponentList">
+                @while (j < configAmount)
+                {
+                    i = 0;
+                    @while (i < lengthIndex)
+                    {
+                        @if (string.Equals(testData[i, 0], testConfig[j]))
+                        {
+                            <div class="systemComponent">
+                                <span class="statusCircle yellow" style="width:50px;height:50px;float:left;margin-right:10px;"></span>
+                                <p> Typ: @testData[i, 0] ID: @testData[i, 1]<br> 
+                                Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
+                            </div>
+                        }
+                        i++;
+                    }
+                    j++;
+                }
             </div>
         </div>
     </div>

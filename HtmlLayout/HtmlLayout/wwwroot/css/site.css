@@ -24,6 +24,7 @@
     width:calc(86vw / 2);
     margin: 0px;
     float:left;
+    text-align: center;
 }
 
 .navContainer {
@@ -79,6 +80,15 @@ a:visited {
     font-size: 72px;
 }
 
+.material-icons.systemBackArrow {
+    line-height: 20vh;
+    color: black;
+    vertical-align: middle;
+    float: left;
+    margin-left: 20px;
+    font-size: 72px;
+}
+
 /* System css*/
 .overflow {
     overflow:scroll;
@@ -97,7 +107,7 @@ a:visited {
     margin-right: 1%;
     border-radius: 3px;
     padding-top: 20px;
-    border-bottom: 4px solid #6DC7D0;
+    border-bottom: 4px solid #053159;
 }
 
 .systemContainer > p {
@@ -127,38 +137,37 @@ a:visited {
 
 .systemComponent {
     border: 2px solid black;
+    margin: 0px;
     margin-bottom: 5px;
-    padding:10px;
-    height:60px;
-    width:100%;
-    background-color:GrayText;
+    padding: 10px;
+    vertical-align:middle;
+    height: 60px;
+    width: calc(70vw / 2);
+    background-color: GrayText;
 }
 
 .systemInfo {
     height:20vh;
-    background-color:cornflowerblue;
     border: 2px black solid;
 }
 
 .systemInfo > h3 {
-    font-size: 38px;
+    font-size: 36px;
     font-family: system-ui;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    float:right;
+    vertical-align:middle;
+    line-height:19vh;
+    margin: 0 30% 0 0;
 }
 
 .systemComponentList {
-    width:100%;
-    height:80vh;
+    width: calc(86vw / 2);
+    height: 70vh;
     border: 2px solid black;
-    width:50%;
+    margin: 0px;
     padding: 10px;
-    float: right;
-    position:relative;
-    overflow-y:scroll;
-    overflow-x:hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .systemLogs {
@@ -168,4 +177,32 @@ a:visited {
     background-color: azure;
     border: 2px solid black;
     padding: 10px;
+}
+
+
+/* JAVACOPYPASTA*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }

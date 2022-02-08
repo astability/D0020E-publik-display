@@ -1,4 +1,4 @@
-﻿@page "/System/{id?}"
+﻿@page "/System/{id}"
 @model PublikDisplay.Pages.SystemInfoModel
 @{
     string[,] testData = {
@@ -26,33 +26,60 @@
     int lengthIndex = testData.GetLength(0);
     int i = 0;
     int j = 0;
+    int q = 0;
 }
 
 
 <div class="mainContainer">
     <div class="infoContainer">
         <div class="systemLogs">
-            <h1>Hola amigos!</h1>
-        </div>
-        <div class="systemComponentList">
+            <h1>LOGS</h1>
             <p>@Model.message</p>
-            @while (j < configAmount)
-            {
-                i = 0;
-                @while (i < lengthIndex)
+            <div class="systemComponentList">
+                @while (q < configAmount)
                 {
-                    @if (string.Equals(testData[i, 0], testConfig[j]))
+                    i = 0;
+                    @while (i < lengthIndex)
                     {
-                        <div class="systemComponent">
-                            <p> Typ: @testData[i, 0] ID: @testData[i, 1]</p>
-                            <p> Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
-                        </div>
+                        @if (string.Equals(testData[i, 0], testConfig[q]))
+                        {
+                            <div class="systemComponent">
+                                <p> Typ: @testData[i, 0] ID: @testData[i, 1]</p>
+                                <p> Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
+                            </div>
+                        }
+                        i++;
                     }
-                    i++;
+                    q++;
                 }
-                j++;
-            }
+            </div>
         </div>
+        <div style="width:48%;float:right;">
+            <div class="systemInfo">
+                <p> Status:</p>
+                <span class="statusCircle green"></span>
+
+            </div>
+            <div class="systemComponentList">
+                @while (j < configAmount)
+                {
+                    i = 0;
+                    @while (i < lengthIndex)
+                    {
+                        @if (string.Equals(testData[i, 0], testConfig[j]))
+                        {
+                            <div class="systemComponent">
+                                <p> Typ: @testData[i, 0] ID: @testData[i, 1]</p>
+                                <p> Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
+                            </div>
+                        }
+                        i++;
+                    }
+                    j++;
+                }
+            </div>
+        </div>
+    </div>
     </div>
     <div class="navContainer">
         <div class="navButtonGroup">

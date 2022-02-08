@@ -3,9 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/Pages/SystemInfo.cshtml">
     <Files>
       <File FileName="HtmlLayout/Pages/Index.cshtml" Line="48" Column="7" />
-      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="145" Column="14" />
-      <File FileName="HtmlLayout/Pages/SystemInfo.cshtml" Line="38" Column="34" />
-      <File FileName="HtmlLayout/Pages/SystemInfo.cshtml.cs" Line="15" Column="37" />
+      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="18" Column="18" />
+      <File FileName="HtmlLayout/Pages/SystemInfo.cshtml" Line="93" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

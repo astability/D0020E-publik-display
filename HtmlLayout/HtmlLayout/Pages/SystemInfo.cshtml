@@ -32,76 +32,41 @@
 
 <div class="mainContainer">
     <div class="infoContainer">
-        <div class="systemLogs">
-            <h1>LOGS</h1>
-            <p>@Model.message</p>
-            <div class="systemComponentList">
-                @while (q < configAmount)
-                {
-                    i = 0;
-                    @while (i < lengthIndex)
-                    {
-                        @if (string.Equals(testData[i, 0], testConfig[q]))
-                        {
-                            <div class="systemComponent">
-                                <p> Typ: @testData[i, 0] ID: @testData[i, 1]</p>
-                                <p> Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
-                            </div>
-                        }
-                        i++;
-                    }
-                    q++;
-                }
-            </div>
-        </div>
-        <div style="width:48%;float:right;">
+        <div class="splitInfo">
             <div class="systemInfo">
-                <p> Status:</p>
-                <span class="statusCircle green"></span>
-
-            </div>
-            <div class="systemComponentList">
-                @while (j < configAmount)
-                {
-                    i = 0;
-                    @while (i < lengthIndex)
-                    {
-                        @if (string.Equals(testData[i, 0], testConfig[j]))
-                        {
-                            <div class="systemComponent">
-                                <p> Typ: @testData[i, 0] ID: @testData[i, 1]</p>
-                                <p> Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
-                            </div>
-                        }
-                        i++;
-                    }
-                    j++;
-                }
+                <a asp-page="/System">
+                    <span class="material-icons bigSize" style="line-height:20vh;vertical-align:middle;float:left;margin-left:20px">west</span>
+                </a>
+                <h3>System logs</h3>
             </div>
         </div>
-    </div>
+        <div class="splitInfo">
+            <div class="systemInfo">
+                <p>Höger</p>
+            </div>
+        </div>
     </div>
     <div class="navContainer">
         <div class="navButtonGroup">
-            <a asp-area="" asp-page="/Index">
-                <button class="buttonCurrent">
+            <a asp-page="/Index">
+                <button>
                     <span class="material-icons bigSize">home</span>
                     <br>Hem
                 </button>
             </a>
-            <a asp-area="" asp-page="/System">
-                <button>
+            <a asp-page="/System">
+                <button class="buttonCurrent">
                     <span class="material-icons bigSize">dvr</span>
                     <br>System
                 </button>
             </a>
-            <a asp-area="" asp-page="/Settings">
+            <a asp-page="/Settings">
                 <button>
                     <span class="material-icons bigSize">settings</span>
                     <br>Inställningar
                 </button>
             </a>
-            <a asp-area="" asp-page="/Index">
+            <a asp-page="/Index">
                 <button>
                     <span class="material-icons bigSize">logout</span>
                     <br>Logga ut

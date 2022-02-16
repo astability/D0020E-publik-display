@@ -1000,24 +1000,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/emillindstrom/.nuget/packages/": {}
+    "C:\\Users\\Alfred\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
+      "projectUniqueName": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
       "projectName": "PublikDisplay",
-      "projectPath": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
-      "packagesPath": "/Users/emillindstrom/.nuget/packages/",
-      "outputPath": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/",
+      "projectPath": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
+      "packagesPath": "C:\\Users\\Alfred\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/emillindstrom/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Alfred\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1063,7 +1069,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

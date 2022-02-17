@@ -1,28 +1,20 @@
 ﻿<Properties StartupConfiguration="{21BF2796-C250-47AC-ACC2-DC87F91D4287}|HtmlLayout">
   <MonoDevelop.Ide.ItemProperties.PublikDisplay PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/Pages/System.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/Pages/Settings.cshtml">
     <Files>
-      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="155" Column="21" />
-      <File FileName="HtmlLayout/Pages/SystemInfo.cshtml" />
-      <File FileName="HtmlLayout/wwwroot/js/site.js" />
-      <File FileName="HtmlLayout/Pages/Shared/_Layout.cshtml" />
-      <File FileName="HtmlLayout/Pages/System.cshtml" Line="7" Column="9" />
+      <File FileName="HtmlLayout/Pages/Index.cshtml.cs" Line="28" Column="16" />
+      <File FileName="HtmlLayout/Pages/Index.cshtml" Line="13" Column="29" />
+      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="110" Column="23" />
+      <File FileName="HtmlLayout/wwwroot/js/site.js" Line="19" Column="42" />
+      <File FileName="HtmlLayout/Pages/Settings.cshtml" Line="38" Column="9" />
+      <File FileName="HtmlLayout/Pages/Settings.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PublikDisplay" expanded="True">
-            <Node name="PublikDisplay" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="Shared" expanded="True" />
-                <Node name="System.cshtml" selected="True" />
-                <Node name="SystemInfo.cshtml" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="js" expanded="True" />
-              </Node>
+            <Node name="PublikDisplay" expanded="True" selected="True">
+              <Node name="Pages" expanded="True" />
             </Node>
           </Node>
         </State>

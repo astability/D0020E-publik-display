@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
 
@@ -12,11 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Settings.cshtml" />
     <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\imageText\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\imageText\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="MongoDB.Driver" />

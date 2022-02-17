@@ -12,7 +12,7 @@
     /// <summary>
     /// For use by database field <c>type</c> (as part of a log object).
     /// </summary>
-    public enum DbEnumType
+    public enum DbEnumLogType
     {
         OneTime,
         Ongoing,
@@ -33,7 +33,7 @@
     /// <summary>
     /// For use by database field <c>SystemType</c>.
     /// </summary>
-    public enum DbEnumType
+    public enum DbEnumSystemType
     {
         Widefind,
         Fibaro

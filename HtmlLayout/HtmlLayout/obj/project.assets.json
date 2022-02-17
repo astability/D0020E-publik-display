@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net6.0": {
       "DnsClient/1.4.0": {
         "type": "package",
         "compile": {
@@ -994,7 +994,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net6.0": [
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.22",
       "MongoDB.Driver >= 2.14.1"
     ]
@@ -1012,17 +1012,17 @@
       "outputPath": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/emillindstrom/.config/NuGet/NuGet.Config"
+        "/Users/emillindstrom/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -1033,8 +1033,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
@@ -1063,7 +1063,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

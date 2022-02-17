@@ -350,7 +350,6 @@
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.RazorAssemblyInfo.cache
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.RazorAssemblyInfo.cs
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/staticwebassets/PublikDisplay.StaticWebAssets.Manifest.cache
-/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/staticwebassets/PublikDisplay.StaticWebAssets.xml
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/scopedcss/bundle/PublikDisplay.styles.css
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.TagHelpers.input.cache
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.TagHelpers.output.cache
@@ -372,3 +371,4 @@
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/ref/PublikDisplay.dll
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.pdb
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.genruntimeconfig.cache
+/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/bin/Debug/net5.0/PublikDisplay.StaticWebAssets.xml

@@ -23,17 +23,12 @@
         </div>
         <div class="infoText">
             <p> Här kommer det finnas information senare</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque, turpis sed pulvinar sollicitudin,
-                nibh turpis luctus mauris, id mattis diam diam nec lectus. Maecenas ullamcorper vitae risus vel auctor.
-                Vestibulum pharetra, sem sed luctus fringilla, nisl dolor finibus libero, et sodales magna lectus quis eros.
-                Nullam a odio eget erat malesuada auctor. Sed laoreet rutrum elementum. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Donec in bibendum nulla. Etiam lacus diam, luctus ut
-                purus sit amet, rhoncus porttitor urna. Pellentesque finibus libero consectetur euismod pulvinar. Proin tristique
-                a neque vel porttitor. Aliquam pharetra suscipit nulla quis volutpat. Sed efficitur elit magna, aliquam finibus orci
-                posuere ut. Morbi dictum felis velit, nec pharetra ante hendrerit vitae. Donec tincidunt tellus enim, sed interdum
-                turpis gravida at.
-            </p>
+            @for (var i = 0; i < @Model.texts.Length; i++)
+            {
+                <div class="texts fade">
+                    <p>@Model.texts[i]</p>
+                </div>
+            }
         </div>
     </div>
     <div class="navContainer">

@@ -22,7 +22,9 @@ using HtmlLayout;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute("RouteTemplate", "/System/{id}")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f054484dd04c9de93d2539d29309341dde16fcbf", @"/Pages/SystemInfo.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e577c70a89f92dc8129763cede51de94fdb73fb0", @"/Pages/_ViewImports.cshtml")]
+    #nullable restore
     public class Pages_SystemInfo : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "/System", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "/Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -85,7 +87,7 @@ using HtmlLayout;
 #line hidden
 #nullable disable
             WriteLiteral("\n\n<div class=\"mainContainer\">\n    <div class=\"infoContainer\">\n        <div class=\"splitInfo\">\n            <div class=\"systemInfo\">\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf5646", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf5690", async() => {
                 WriteLiteral("\n                    <span class=\"material-icons systemBackArrow\">west</span>\n                ");
             }
             );
@@ -210,7 +212,7 @@ using HtmlLayout;
 #line hidden
 #nullable disable
             WriteLiteral("            </div>\n        </div>\n    </div>\n    <div class=\"navContainer\">\n        <div class=\"navButtonGroup\">\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf11531", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf11575", async() => {
                 WriteLiteral("\n                <button>\n                    <span class=\"material-icons bigSize\">home</span>\n                    <br>Hem\n                </button>\n            ");
             }
             );
@@ -226,7 +228,7 @@ using HtmlLayout;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf12841", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf12885", async() => {
                 WriteLiteral("\n                <button class=\"buttonCurrent\">\n                    <span class=\"material-icons bigSize\">dvr</span>\n                    <br>System\n                </button>\n            ");
             }
             );
@@ -242,7 +244,7 @@ using HtmlLayout;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf14177", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf14221", async() => {
                 WriteLiteral("\n                <button>\n                    <span class=\"material-icons bigSize\">settings</span>\n                    <br>Inställningar\n                </button>\n            ");
             }
             );
@@ -258,7 +260,7 @@ using HtmlLayout;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf15501", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f054484dd04c9de93d2539d29309341dde16fcbf15545", async() => {
                 WriteLiteral("\n                <button>\n                    <span class=\"material-icons bigSize\">logout</span>\n                    <br>Logga ut\n                </button>\n            ");
             }
             );
@@ -276,16 +278,26 @@ using HtmlLayout;
             WriteLiteral("\n        </div>\n    </div>\n</div>\n");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<PublikDisplay.Pages.SystemInfoModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<PublikDisplay.Pages.SystemInfoModel> Html { get; private set; } = default!;
+        #nullable disable
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<PublikDisplay.Pages.SystemInfoModel> ViewData => (global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<PublikDisplay.Pages.SystemInfoModel>)PageContext?.ViewData;
         public PublikDisplay.Pages.SystemInfoModel Model => ViewData.Model;
     }

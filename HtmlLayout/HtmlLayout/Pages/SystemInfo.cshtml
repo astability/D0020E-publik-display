@@ -2,26 +2,26 @@
 @model PublikDisplay.Pages.SystemInfoModel
 @{
     string[,] testData = {
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BTAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"}
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BTAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
+{"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"}
     };
-    string[] testConfig ={"BEACON", "TAG"};
+    string[] testConfig = { "BEACON", "TAG" };
     int configAmount = testConfig.Length;
     int lengthIndex = testData.GetLength(0);
     int i = 0;
@@ -71,8 +71,10 @@
                         {
                             <div class="systemComponent">
                                 <span class="statusCircle yellow" style="width:50px;height:50px;float:left;margin-right:10px;"></span>
-                                <p> Typ: @testData[i, 0] ID: @testData[i, 1]<br> 
-                                Datum: @testData[i, 2] Tid: @testData[i, 3]</p>
+                                <p>
+                                    Typ: @testData[i, 0] ID: @testData[i, 1]<br>
+                                    Datum: @testData[i, 2] Tid: @testData[i, 3]
+                                </p>
                             </div>
                         }
                         i++;

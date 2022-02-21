@@ -17,24 +17,3 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-// Home page / Slideshow
-var slideIndex = 1;
-showSlide(slideIndex)
-
-function moveToSlide(n) {
-    showSlide(slideIndex += n);
-}
-
-function showSlide(n) {
-    var j;
-    var slides = document.getElementsByClassName("slides");
-    var texts = document.getElementsByClassName("texts");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (j = 0; j < slides.length; j++) {
-        slides[j].style.display = "none";
-        texts[j].style.display = "none";
-    }
-    texts[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].style.display = "block";
-}

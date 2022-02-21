@@ -13,6 +13,11 @@ namespace HtmlLayout
     {
         public static void Main(string[] args)
         {
+            //  1) Start MongoDB connection.
+            //  2) Setup monitioring
+            //  3) Start site host
+
+
             CreateHostBuilder(args).Build().Run();
         }
 

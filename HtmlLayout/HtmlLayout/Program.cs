@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using PublikDisplay.Monitors;
 
 namespace HtmlLayout
 {
@@ -18,14 +20,33 @@ namespace HtmlLayout
             //  3) Start site host
 
 
+
+
             CreateHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            IHostBuilder builder =  Host.CreateDefaultBuilder(args);
+
+            builder.ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+
+            /*
+            builder.ConfigureServices(service =>
+            {
+                WidefindMonitor mon = new WidefindMonitor(1);
+                service.AddSingleton<WidefindMonitor>(mon);
+                WidefindMonitor mon2 = new WidefindMonitor(2);
+                service.AddSingleton<WidefindMonitor>(mon2);
+                
+            });*/
+
+
+            return builder;
+        }
+            
     }
 }

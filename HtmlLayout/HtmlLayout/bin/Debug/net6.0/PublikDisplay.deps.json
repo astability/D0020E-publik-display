@@ -37,6 +37,7 @@
           "M2Mqtt": "4.3.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.2",
           "Microsoft.Extensions.Hosting": "6.0.1",
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
           "MongoDB.Driver": "2.14.1",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",

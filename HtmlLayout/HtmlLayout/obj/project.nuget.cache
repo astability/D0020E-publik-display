@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8tXitQv2V86wO34sEPLL1PGwFIsd4NWDxOqL46sUrjpHhaTGyzqwatyYkb1hLCWHGekKvTBDtkKjmE3Xi5nBtw==",
+  "dgSpecHash": "ed0vGhtD94h87PUJcLHFIVliyIO7kq3ybly/TIweaGG+L7Jx0YQFOkxY5Ob/8BPhfXhbpbhcmikL1IKGaWE7fw==",
   "success": true,
   "projectFilePath": "/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/PublikDisplay.csproj",
   "expectedPackageFiles": [
     "/Users/emillindstrom/.nuget/packages/dnsclient/1.4.0/dnsclient.1.4.0.nupkg.sha512",
+    "/Users/emillindstrom/.nuget/packages/libusbdotnet/2.2.29/libusbdotnet.2.2.29.nupkg.sha512",
     "/Users/emillindstrom/.nuget/packages/microsoft.aspnetcore.cryptography.internal/2.2.0/microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "/Users/emillindstrom/.nuget/packages/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
     "/Users/emillindstrom/.nuget/packages/microsoft.aspnetcore.dataprotection.abstractions/2.2.0/microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg.sha512",

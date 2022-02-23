@@ -362,3 +362,4 @@
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/bin/Debug/net6.0/PublikDisplay
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net6.0/refint/PublikDisplay.dll
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/bin/Debug/net6.0/LibUsbDotNet.LibUsbDotNet.dll

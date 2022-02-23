@@ -6,27 +6,32 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.PublikDisplay PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HtmlLayout/Pages/Index.cshtml.cs">
     <Files>
-      <File FileName="HtmlLayout/Pages/Index.cshtml.cs" Line="33" Column="65" />
-      <File FileName="HtmlLayout/Pages/Index.cshtml" Line="1" Column="1" />
-      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="1" Column="1" />
-      <File FileName="HtmlLayout/wwwroot/js/site.js" Line="1" Column="1" />
-      <File FileName="HtmlLayout/Pages/Settings.cshtml" Line="38" Column="9" />
-      <File FileName="HtmlLayout/Startup.cs" Line="55" Column="6" />
-      <File FileName="HtmlLayout/Program.cs" Line="16" Column="1" />
-      <File FileName="HtmlLayout/Pages/SystemInfo.cshtml" Line="5" Column="21" />
-      <File FileName="HtmlLayout/Pages/SystemInfo.cshtml.cs" Line="19" Column="1" />
+      <File FileName="HtmlLayout/wwwroot/css/site.css" Line="120" Column="21" />
+      <File FileName="HtmlLayout/Pages/Index.cshtml" Line="37" Column="10" />
+      <File FileName="HtmlLayout/Pages/Index.cshtml.cs" Line="76" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PublikDisplay" expanded="True">
             <Node name="PublikDisplay" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" expanded="True">
+                  <Node name="Index.cshtml.cs" selected="True" />
+                </Node>
                 <Node name="SystemInfo.cshtml" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

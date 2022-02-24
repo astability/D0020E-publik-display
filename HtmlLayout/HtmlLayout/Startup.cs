@@ -25,11 +25,6 @@ namespace HtmlLayout
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-
-            WidefindMonitor mon = new WidefindMonitor(1);
-            services.AddSingleton<WidefindMonitor>(mon);
-            WidefindMonitor mon2 = new WidefindMonitor(2);
-            services.AddSingleton<WidefindMonitor>(mon2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

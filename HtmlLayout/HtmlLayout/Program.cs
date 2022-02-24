@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using PublikDisplay.Monitors;
+using MongoDB.Driver;
 
 namespace HtmlLayout
 {
@@ -19,8 +20,8 @@ namespace HtmlLayout
             //  2) Setup monitioring
             //  3) Start site host
 
-
-
+            var client = new MongoClient("mongodb://localhost");
+            var mon = new WidefindMonitor(0,client);
 
             CreateHostBuilder(args).Build().Run();
         }

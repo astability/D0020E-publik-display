@@ -372,3 +372,6 @@
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.pdb
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/obj/Debug/net5.0/PublikDisplay.genruntimeconfig.cache
 /Users/emillindstrom/Documents/Projektet/PublikDisplay/D0020E-publik-display/HtmlLayout/HtmlLayout/bin/Debug/net5.0/PublikDisplay.StaticWebAssets.xml
+C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\PublikDisplay.dll
+C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\ref\PublikDisplay.dll
+C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\PublikDisplay.pdb

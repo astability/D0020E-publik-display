@@ -99,13 +99,24 @@ namespace Fibaro
     /// <param name="dead">
     ///   Checks if device is "dead" (i.e is not connected). Note that dead nodes can sometimes be reconnected without problem.
     /// </param>
-    public readonly record struct FibaroDevice(
-        int id,
-        string name,
-        bool enabled,
-        int? batteryLevel,
-        bool dead
-    );
+    // This would have been less of a pain if we could use .NET 6.0
+    public readonly struct FibaroDevice
+    {
+        public FibaroDevice(int id, string name, bool enabled, int? batteryLevel, bool dead)
+        {
+            this.id = id;
+            this.name = name;
+            this.enabled = enabled;
+            this.batteryLevel = batteryLevel;
+            this.dead = dead;
+        }
+
+        public readonly int id;
+        public readonly string name;
+        public readonly bool enabled;
+        public readonly int? batteryLevel;
+        public readonly bool dead;
+    }
 
     
 

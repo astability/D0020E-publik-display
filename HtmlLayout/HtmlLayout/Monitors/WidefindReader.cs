@@ -122,7 +122,7 @@ namespace Widefind
                     case "BEACON":
                         //csv fmt:
                         // <address>,<version>,<posX>,<posY>,<posZ>,<battery>,<rssi>,<timealive>,<calibration>,<nodetype>
-                        device = WidefindDeviceType.beacon;
+                        device = WidefindDeviceType.Beacon;
                         pos = new Vector3(int.Parse(csv[2]), int.Parse(csv[3]), int.Parse(csv[4]));
                         battery = float.Parse(csv[5], dotDecimal);
                         rssi = float.Parse(csv[6], dotDecimal);
@@ -130,7 +130,7 @@ namespace Widefind
                     case "REPORT":
                         //csv fmt:
                         // <address>,<version>,<posX>,<posY>,<posZ>,<velX>,<velY>,<velZ>,<battery>,<rssi>,<timealive>
-                        device = WidefindDeviceType.tag;
+                        device = WidefindDeviceType.Tag;
                         pos = new Vector3(int.Parse(csv[2]), int.Parse(csv[3]), int.Parse(csv[4]));
                         battery = float.Parse(csv[8], dotDecimal);
                         rssi = float.Parse(csv[9], dotDecimal);
@@ -179,22 +179,33 @@ namespace Widefind
 
     public enum WidefindDeviceType
     {
-        tag,
-        beacon
+        Tag,
+        Beacon
     }
 
     /// <summary>
     /// Represents a state update message of a device belonging to a Widefind system.
     /// </summary>
-    public readonly record struct WidefindMsg
-    (
-        WidefindDeviceType type,
-        string deviceID,
-        Vector3 pos,
-        float battery,
-        float rssi,
-        DateTime time
-    );
+    public readonly struct WidefindMsg
+    {
+        public WidefindMsg(WidefindDeviceType type, string deviceID, Vector3 pos, float battery, float rssi, DateTime time)
+        {
+            this.type = type;
+            this.deviceID = deviceID;
+            this.pos = pos;
+            this.battery = battery;
+            this.rssi = rssi;
+            this.time = time;
+        }
+
+        public readonly WidefindDeviceType type;
+        public readonly string deviceID;
+        public readonly Vector3 pos;
+        public readonly float battery;
+        public readonly float rssi;
+        public readonly DateTime time;
+    }
+
 
     /// <summary>
     /// Represents argument data for a Widefind event triggered by a recieved MQTT message.

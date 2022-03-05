@@ -9,23 +9,25 @@
     {
         OneTime,
         Ongoing,
-        Closed,
+        Ended,
         Hidden
 
     }
+
     public enum deviceStatus
     {
-        Failure,
+        Normal,
         Warning,
-        Normal
-
+        Failure
     }
+
+    // order is for comparing priorities. Failure > Verbose
     public enum importance
     {
-        Failure,
-        Warning,
+        Verbose = 0,
         Info,
-        Verbose
+        Warning,
+        Failure
     }
     public enum systemType
     {

@@ -11,7 +11,7 @@ build_property.RootNamespace = PublikDisplay
 build_property.ProjectDir = C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout
 build_property._RazorSourceGeneratorDebug = 
 

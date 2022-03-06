@@ -56,6 +56,7 @@ namespace PublikDisplay.Monitors
                 reader = new WidefindReader();
                 reader.OnMessage += handleMessage;
                 reader.OnError += handleError;
+                reader.OnConnectionFailure += handleConnFail;
 
                 this.timeoutCheckTimer = new System.Timers.Timer(settings.timeoutMs);
                 timeoutCheckTimer.AutoReset = true;
@@ -64,18 +65,21 @@ namespace PublikDisplay.Monitors
                 this.messageTimeoutTimer = new System.Timers.Timer(settings.timeoutMs);
                 messageTimeoutTimer.AutoReset = true;
                 messageTimeoutTimer.Elapsed += handleMessageTimeout;
+                
 
                 reader.Connect(settings.mqttIp);
 
                 // Code below will not execute if connection fails!
-                // Make sure to duplicate code in retryConnection to run it again after connect attempt.
+                // Make sure to duplicate code in retryConnection, to run it again after connect attempt.
+                // Also stop timers in handleConnFail
                 timeoutCheckTimer.Enabled = true;
                 messageTimeoutTimer.Enabled = true;
                 
             }
             catch (uPLibrary.Networking.M2Mqtt.Exceptions.MqttConnectionException)
             {
-                CheckCondition(logsCollection, true, "Kan ej koppla till MQTT-broker.", "", importance.Failure, null, StatusCode.FatalNoConn);
+                string message = "Första koppling till MQTT-broker misslyckades. ";
+                CheckCondition(logsCollection, true, "Kan ej koppla till MQTT-broker.", message, importance.Failure, null, StatusCode.FatalNoConn);
                 retryTimer = new System.Timers.Timer(10000);
                 retryTimer.Elapsed += retryConnection;
                 retryTimer.AutoReset = false;
@@ -83,6 +87,22 @@ namespace PublikDisplay.Monitors
 
             }
             
+        }
+
+        private void handleConnFail(object sender, EventArgs e)
+        {
+            // Situation:
+            // Connection has been timed out for too long and needs to be restarted completely.
+            // Disable all other timers and start running retry connection timer.
+            timeoutCheckTimer.Stop();
+            messageTimeoutTimer.Stop();
+
+            string message = "Tidsgräns för anslutning till MQTT-broker överskriden. Koppling kommer periodiskt försöka startas om.";
+            CheckCondition(logsCollection, true, "Koppling till MQTT-broker avbruten.", message, importance.Failure, null, StatusCode.FatalNoConn);
+            retryTimer = new System.Timers.Timer(10000);
+            retryTimer.Elapsed += retryConnection;
+            retryTimer.AutoReset = false;
+            retryTimer.Enabled = true;
         }
 
         private void checkTimeouts(object sender, ElapsedEventArgs e)

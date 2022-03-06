@@ -28,6 +28,7 @@ namespace Widefind
         public abstract void Disconnect();
         public abstract event EventHandler<WidefindMsgEventArgs>? OnMessage;
         public abstract event EventHandler<WidefindMsgEventArgs>? OnError;
+        public abstract event EventHandler<EventArgs>? OnConnectionFailure;
     }
 
     public class WidefindReader : iWidefindReader
@@ -49,11 +50,19 @@ namespace Widefind
         {
             client = new MqttClient(ipaddr);
             client.MqttMsgPublishReceived += handleMessage;
+            client.ConnectionClosed += handleConnClosed;
 
             client.Subscribe(new string[] { "ltu-system/#" }, new byte[] { 2 });
 
             // Use a unique id as client id, each time we start the application.
             client.Connect(Guid.NewGuid().ToString());
+        }
+
+        private void handleConnClosed(object sender, EventArgs e)
+        {
+            EventHandler<EventArgs>? handler = OnConnectionFailure;
+            EventArgs eventArgs = new EventArgs();
+            handler?.Invoke(this, eventArgs);
         }
 
         private void handleMessage(object sender, MqttMsgPublishEventArgs e)
@@ -168,6 +177,7 @@ namespace Widefind
 
         public override event EventHandler<WidefindMsgEventArgs>? OnMessage;
         public override event EventHandler<WidefindMsgEventArgs>? OnError;
+        public override event EventHandler<EventArgs>? OnConnectionFailure;
 
         private class WidefindJsonMsg
         {
@@ -336,6 +346,7 @@ namespace Widefind
         }
         public override event EventHandler<WidefindMsgEventArgs>? OnMessage;
         public override event EventHandler<WidefindMsgEventArgs>? OnError;
+        public override event EventHandler<EventArgs>? OnConnectionFailure;
 
         private class WidefindJsonMsg
         {

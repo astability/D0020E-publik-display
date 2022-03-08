@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 namespace PublikDisplay.Monitors
 {       
-    public class WidefindMonitor
+    public class WidefindMonitor : Imonitor
     {
         private int SystemId;
         private MongoClient Client;

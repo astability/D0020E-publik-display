@@ -34,15 +34,10 @@ namespace Fibaro
         public override FibaroDevice[] GetDevices()
         {
 
-            // TODO: find out how refresh state logs work
-            // http://130.240.114.44/api/refreshStates/
-
-                
             WebClient client = new WebClient();
             client.Headers.Add("Authorization", authString);
-            string resp = client.DownloadString(adress + "/api/devices/");
 
-            Console.WriteLine(resp);
+            string resp = client.DownloadString(adress + "/api/devices/");
 
             FibaroDeviceJson[] devices = JsonSerializer.Deserialize<FibaroDeviceJson[]>(resp, JsonOptions)!;
 

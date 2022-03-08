@@ -9,6 +9,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using PublikDisplay.Monitors;
 using MongoDB.Driver;
+using MongoDB.Bson;
+using dbEnums;
 
 namespace HtmlLayout
 {
@@ -21,7 +23,27 @@ namespace HtmlLayout
             //  3) Start site host
 
             var client = new MongoClient("mongodb://localhost");
-            var mon = new WidefindMonitor(0,client);
+            var db = client.GetDatabase("display");
+            var systemsList = db.GetCollection<BsonDocument>("systems").Find("{ }").ToList();
+            
+            List<Imonitor> monitors = new List<Imonitor>();
+            foreach(var system in systemsList)
+            {
+                Imonitor newMonitor;
+                int id = system["systemId"].AsInt32;
+                switch (Enum.Parse(typeof(systemType), (string)system["systemType"]))
+                {
+                    case systemType.Widefind:
+                        newMonitor = new WidefindMonitor(id, client);
+                        break;
+                    case systemType.Fibaro:
+                        newMonitor = new FibaroMonitor(id, client);
+                        break;
+                    default:
+                        throw new InvalidOperationException("Failed to find parse provided system type.");
+                }
+                monitors.Add(newMonitor);
+            }
 
             CreateHostBuilder(args).Build().Run();
         }
@@ -34,16 +56,6 @@ namespace HtmlLayout
             {
                 webBuilder.UseStartup<Startup>();
             });
-
-            /*
-            builder.ConfigureServices(service =>
-            {
-                WidefindMonitor mon = new WidefindMonitor(1);
-                service.AddSingleton<WidefindMonitor>(mon);
-                WidefindMonitor mon2 = new WidefindMonitor(2);
-                service.AddSingleton<WidefindMonitor>(mon2);
-                
-            });*/
 
 
             return builder;

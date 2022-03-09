@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Git_filer\\projektet\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {}
+    "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {}
   },
   "projects": {
-    "F:\\Git_filer\\projektet\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {
+    "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Git_filer\\projektet\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
+        "projectUniqueName": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
         "projectName": "PublikDisplay",
-        "projectPath": "F:\\Git_filer\\projektet\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
-        "packagesPath": "C:\\Users\\EmilL\\.nuget\\packages\\",
-        "outputPath": "F:\\Git_filer\\projektet\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\obj\\",
+        "projectPath": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
+        "packagesPath": "C:\\Users\\Alfred\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\EmilL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Alfred\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,17 +43,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "LibUsbDotNet": {
-              "target": "Package",
-              "version": "[2.2.29, )"
-            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.2, )"
-            },
-            "Microsoft.AspNetCore.Session": {
-              "target": "Package",
-              "version": "[2.2.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",

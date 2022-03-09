@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 @{
-   var j = 0;
+    var j = 0;
 }
 
 <div class="mainContainer">
@@ -23,7 +23,6 @@
         </div>
         <div class="infoText">
             <p>@Model.loggedIn </p>
-            <p>@Model.readValue </p>
             @for (var i = 0; i < @Model.texts.Length; i++)
             {
                 <div class="texts fade">
@@ -36,7 +35,7 @@
         @if (@Model.loggedIn == "false")
         {
         <div class="navButtonGroup">
-            <a class="navbar-brand" asp-page-handler="LoginBtn">
+            <a class="navbar-brand" onClick=openForm()>
                 <button class="buttonCurrent">
                     <span class="material-icons bigSize">login</span>
                     <br>Logga in
@@ -75,8 +74,27 @@
         </div>
         }
     </div>
-</div>
+    @if (@Model.loggedIn == "false")
+    {
+        <div class="loginPopup" id="loginForm">
+                <form class="loginContainer" runat="server">
+                    <h1 style="font-family:system-ui"> Logga in</h1>
 
+                    <label for="username"><b style="font-family:system-ui">Användarnamn</b></label>
+                    <input class="use-keyboard-input" type="text" placeholder="Skriv in användarnamn" name="username" required>
+
+                    <label for="password" style="font-family:system-ui"><b>Lösenord</b></label>
+                    <input class="use-keyboard-input" type="password" placeholder="Skriv in lösenord" name="password" required>
+
+                    <button type="submit" class="loginButton" asp-page-handler="LoginBtn">Logga in</button>
+                    <button type="button" class="loginButton cancel" onclick="closeForm()">Stäng</button>
+                    <p>@Model.loginMessage</p>
+                </form>
+        </div>
+        <script src="~/js/keyboard.js"></script>
+        <div class=keyboard></div>
+    }
+</div>
 <script type="text/javascript">
     var slideIndex = 1;
     showSlide(slideIndex);
@@ -104,12 +122,12 @@
     function idleCheck() {
         var t;
         window.onload = resetTimer;
-        window.onmousedown = resetTimer;  // catches touchscreen presses as well
-        window.ontouchstart = resetTimer; // catches touchscreen swipes as well
-        window.ontouchmove = resetTimer;  // required by some devices
-        window.onclick = resetTimer;      // catches touchpad clicks as well
+        window.onmousedown = resetTimer;
+        window.ontouchstart = resetTimer;
+        window.ontouchmove = resetTimer;
+        window.onclick = resetTimer;
         window.onkeydown = resetTimer;
-        window.addEventListener('scroll', resetTimer, true); // improved; see comments
+        window.addEventListener('scroll', resetTimer, true);
 
         function reload() {
             document.getElementById('logoutBtn').click();
@@ -117,7 +135,15 @@
 
         function resetTimer() {
             clearTimeout(t);
-            t = setTimeout(reload, 10000);  // time is in milliseconds
+            t = setTimeout(reload, 10000);  // milliseconds
         }
+    }
+
+    function openForm() {
+        document.getElementById("loginForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("loginForm").style.display = "none";
     }
 </script>

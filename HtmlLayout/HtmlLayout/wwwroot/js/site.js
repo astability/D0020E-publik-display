@@ -4,16 +4,36 @@
 // Systeminfo logs 
 var coll = document.getElementsByClassName("collapsible");
 var i;
+var j;
 
 for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
+    if (i == 0) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementsByClassName('contentImportant');
+            if (content[0].style.display === "block") {
+                for (j = 0; j < content.length; j++) {
+                    content[j].style.display = 'none';
+                }
+            } else {
+                for (j = 0; j < content.length; j++) {
+                    content[j].style.display = 'block';
+                }
+            }
+        });
+    } else {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementsByClassName('contentVerbose');
+            if (content[0].style.display === "block") {
+                for (j = 0; j < content.length; j++) {
+                    content[j].style.display = 'none';
+                }
+            } else {
+                for (j = 0; j < content.length; j++) {
+                    content[j].style.display = 'block';
+                }
+            }
+        });
+    }
 }
-

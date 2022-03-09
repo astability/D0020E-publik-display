@@ -10,8 +10,9 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using System.Web;
 using Microsoft.AspNetCore.Http;
-using LibUsbDotNet;
-using LibUsbDotNet.Main;
+using MongoDB.Driver;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace HtmlLayout.Pages
 {
@@ -25,13 +26,8 @@ namespace HtmlLayout.Pages
         public string[] slideshow;
         public string[] texts;
 
-        // USB setup
-        //   Produkt-ID:	0x2200
-        // Tillverkar - ID:	0x072f
-
-        public static UsbDevice cardReader;
-        public UsbDeviceFinder usbFinder = new UsbDeviceFinder(Convert.ToInt32("0x072F", 16), Convert.ToInt32("0x2200", 16));
-        public string readValue;
+        // Message for login
+        public string loginMessage;
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -42,6 +38,7 @@ namespace HtmlLayout.Pages
         public void OnGet()
         {
             loggedIn = HttpContext.Session.GetString("loggedIn");
+            loginMessage = HttpContext.Session.GetString("loginMessage");
             if (loggedIn == null)
             {
                 loggedIn = "false";
@@ -62,103 +59,61 @@ namespace HtmlLayout.Pages
                     texts[i] = "Filen " + texts[i] + " kunde inte hittas";
                 }
             }
+            if(loggedIn == "false")
+            {
+                if (!String.IsNullOrEmpty(Request.Query["username"].ToString()) )
+                {
+                    loginBtn();
+                }
+            }
         }
 
-        public void OnGetLoginBtn(Object sender, EventArgs e)
+        private void loginSuccess()
         {
             HttpContext.Session.SetString("loggedIn", "true");
+            HttpContext.Session.SetString("loginMessage", "Lyckad inloggning");
             loggedIn = HttpContext.Session.GetString("loggedIn");
-            ErrorCode ec = ErrorCode.None;
-            try
+            Response.Redirect(Request.Path);
+        }
+
+        private void loginBtn()
+        {
+            var dbClient = new MongoClient("mongodb://127.0.0.1:27017");
+            IMongoDatabase db = dbClient.GetDatabase("display");
+
+            var collection = db.GetCollection<BsonDocument>("users");
+            var filter = Builders<BsonDocument>.Filter.Eq("username", Request.Query["username"].ToString());
+            var user = collection.Find(filter).FirstOrDefault();
+            if (user != null)
             {
-                // Find and open the usb device.
-                cardReader = UsbDevice.OpenUsbDevice(usbFinder);
-
-                // If the device is open and ready
-                if (cardReader == null) throw new Exception("Device Not Found.");
-
-                // If this is a "whole" usb device (libusb-win32, linux libusb-1.0)
-                // it exposes an IUsbDevice interface. If not (WinUSB) the 
-                // 'wholeUsbDevice' variable will be null indicating this is 
-                // an interface of a device; it does not require or support 
-                // configuration and interface selection.
-                IUsbDevice wholeUsbDevice = cardReader as IUsbDevice;
-                if (!ReferenceEquals(wholeUsbDevice, null))
+                if (Request.Query["username"].ToString() == user.GetValue("username").ToString())
                 {
-                    // This is a "whole" USB device. Before it can be used, 
-                    // the desired configuration and interface must be selected.
-
-                    // Select config #1
-                    wholeUsbDevice.SetConfiguration(1);
-
-                    // Claim interface #0.
-                    wholeUsbDevice.ClaimInterface(0);
-                }
-
-                // open read endpoint 1.
-                UsbEndpointReader reader = cardReader.OpenEndpointReader(ReadEndpointID.Ep01);
-
-
-                byte[] readBuffer = new byte[1024];
-                while (ec == ErrorCode.None)
-                {
-                    int bytesRead;
-
-                    // If the device hasn't sent data in the last 5 seconds,
-                    // a timeout error (ec = IoTimedOut) will occur. 
-                    ec = reader.Read(readBuffer, 5000, out bytesRead);
-
-                    if (bytesRead == 0) throw new Exception(string.Format("{0}:No more bytes!", ec));
-                    Console.WriteLine("{0} bytes read", bytesRead);
-                    readValue = readValue + bytesRead.ToString();
-
-                    // Write that output to the console.
-                    Console.Write(Encoding.Default.GetString(readBuffer, 0, bytesRead));
-                }
-
-                Console.WriteLine("\r\nDone!\r\n");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine();
-                Console.WriteLine((ec != ErrorCode.None ? ec + ":" : String.Empty) + ex.Message);
-            }
-            finally
-            {
-                if (cardReader != null)
-                {
-                    if (cardReader.IsOpen)
+                    if (Request.Query["password"].ToString() == user.GetValue("password").ToString())
                     {
-                        // If this is a "whole" usb device (libusb-win32, linux libusb-1.0)
-                        // it exposes an IUsbDevice interface. If not (WinUSB) the 
-                        // 'wholeUsbDevice' variable will be null indicating this is 
-                        // an interface of a device; it does not require or support 
-                        // configuration and interface selection.
-                        IUsbDevice wholeUsbDevice = cardReader as IUsbDevice;
-                        if (!ReferenceEquals(wholeUsbDevice, null))
-                        {
-                            // Release interface #0.
-                            wholeUsbDevice.ReleaseInterface(0);
-                        }
-
-                        cardReader.Close();
+                        HttpContext.Session.SetString("role", user.GetValue("role").ToString());
+                        loginSuccess();
                     }
-                    cardReader = null;
-
-                    // Free usb resources
-                    UsbDevice.Exit();
-
+                    else
+                    {
+                        HttpContext.Session.SetString("loginMessage", "Fel användarnamn eller lösenord");
+                    }
+                }
+                else
+                {
+                    HttpContext.Session.SetString("loginMessage", "Fel användarnamn eller lösenord");
                 }
             }
-            OnGet();
+            HttpContext.Session.SetString("loginMessage", "Fel användarnamn eller lösenord");
+            Response.Redirect(Request.Path);
         }
 
         public void OnGetLogoutBtn(Object sender, EventArgs e)
         {
+            HttpContext.Session.SetString("role", "Besökare");
             HttpContext.Session.SetString("loggedIn", "false");
+            HttpContext.Session.SetString("loginMessage", "");
             loggedIn = HttpContext.Session.GetString("loggedIn");
             OnGet();
         }
-
     }
 }

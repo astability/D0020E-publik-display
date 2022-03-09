@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oWWsKUTItNhL4FVXH9xV5trr38omm8F3ttc89Xnp2to=",
+  "Hash": "loVtq8x4CjLPOQsZecC3mlb5Mfxo4vmO+CxwWU2uRv0=",
   "Source": "PublikDisplay",
   "BasePath": "_content/PublikDisplay",
   "Mode": "Default",
@@ -253,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imageText\\ALabb5.txt"
-    },
-    {
-      "Identity": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\wwwroot\\js\\keyboard.js",
-      "SourceId": "PublikDisplay",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\wwwroot\\",
-      "BasePath": "_content/PublikDisplay",
-      "RelativePath": "js/keyboard.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\keyboard.js"
     },
     {
       "Identity": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\wwwroot\\js\\site.js",

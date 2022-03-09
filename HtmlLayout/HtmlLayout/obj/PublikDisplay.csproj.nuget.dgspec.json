@@ -43,9 +43,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "LibUsbDotNet": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",

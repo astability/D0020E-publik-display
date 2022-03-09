@@ -2,7 +2,7 @@
 @model PublikDisplay.Pages.SystemInfoModel
 @{
 	int i = 0;
-	int j = 0;
+	int j = Model.logs.Length - 1;
 }
 
 
@@ -16,7 +16,8 @@
 				<h3>System logs</h3>
 			</div>
 			<button type="button" class="collapsible">Viktiga loggar</button>
-			@while (j < Model.logs.Length)
+			<div class="overflow" style="display: none; height:60vh" id="scrollImportant">
+			@while (j >= 0)
 			{
 				if (string.Equals(@Model.logs[j][0], "Warning"))
 				{
@@ -40,13 +41,15 @@
 						<p> Hela meddelandet: @Model.logs[j][6]</p>
 					</div>
 				}
-				j++;
+				j--;
 			}
+			</div>
 			<button type="button" class="collapsible">Alla loggar</button>
+			<div class="overflow" style="display: none;height:60vh" id="scrollVerbose">
 			@{
-				j = 0;
+				j = Model.logs.Length - 1;
 			}
-			@while (j < Model.logs.Length)
+			@while (j >= 0)
 			{
 				if (!(string.Equals(@Model.logs[j][0], "Warning")) && !(string.Equals(@Model.logs[j][0], "Failure"))) 
 				{
@@ -59,13 +62,14 @@
 						<p> Hela meddelandet: @Model.logs[j][6]</p>
 					</div>
 				}
-				j++;
+				j--;
 			}
+			</div>
 		</div>
 		<div class="splitInfo">
 			<div class="systemInfo">
 				<div style="width:50%;height:20vh;float:left;font-family:system-ui;">
-					<h3 style="font-size:36px;margin-top:50px;">@Model.systemInfo[0]</h3>
+					<h2 style="font-size:36px;margin-top:50px;">@Model.systemInfo[0]</h2>
 				</div>
 				<div style="width:50%;height:20vh;float:left;">
 					<p style="font-size:24px">Allmän status:</p>
@@ -84,7 +88,7 @@
 				</div>
 			</div>
 			<div class="systemInfo" style="height:10vh;padding-bottom:6px;">
-				<h1 style="font-size:36px;font-family:system-ui;">Enheter</h1>
+				<h2 style="font-size:36px;font-family:system-ui;">Enheter</h2>
 			</div>
 			<div class="systemComponentList">
 				@{
@@ -98,11 +102,11 @@
 						@if (string.Equals(@Model.devices[i][1], @Model.deviceSorting[j]))
 						{
 							<div class="systemComponent">
-								@if (string.Equals(@Model.systemInfo[1], "Normal"))
+								@if (string.Equals(@Model.devices[i][3], "Normal"))
 								{
 									<span class="statusCircle green" style="width:50px;height:50px;float:left;margin-right:10px;"></span>
 								}
-								else if (string.Equals(@Model.systemInfo[1], "Warning"))
+								else if (string.Equals(@Model.devices[i][3], "Warning"))
 								{
 									<div class="statusCircle yellow" style="width:50px;height:50px;float:left;margin-right:10px;"></div>
 								}

@@ -1,0 +1,1 @@
+Samtal på distans vid bedömning av daglig aktivitet med robot från Double Robotics.

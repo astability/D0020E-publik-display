@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {}
+    "F:\\Git_filer\\projektetAlf\\D0020E-publik-display\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {
+    "F:\\Git_filer\\projektetAlf\\D0020E-publik-display\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
+        "projectUniqueName": "F:\\Git_filer\\projektetAlf\\D0020E-publik-display\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
         "projectName": "PublikDisplay",
-        "projectPath": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
-        "packagesPath": "C:\\Users\\Alfred\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alfred\\Source\\Repos\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\obj\\",
+        "projectPath": "F:\\Git_filer\\projektetAlf\\D0020E-publik-display\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\PublikDisplay.csproj",
+        "packagesPath": "C:\\Users\\EmilL\\.nuget\\packages\\",
+        "outputPath": "F:\\Git_filer\\projektetAlf\\D0020E-publik-display\\D0020E-publik-display\\HtmlLayout\\HtmlLayout\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alfred\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EmilL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,9 +44,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "LibUsbDotNet": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
             "M2Mqtt": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
@@ -72,20 +81,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[5.0.13, 5.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {

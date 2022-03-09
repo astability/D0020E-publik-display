@@ -11,11 +11,14 @@ for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = document.getElementsByClassName('contentImportant');
+            var scroll = document.getElementById('scrollImportant');
             if (content[0].style.display === "block") {
+                scroll.style.display = 'none';
                 for (j = 0; j < content.length; j++) {
                     content[j].style.display = 'none';
                 }
             } else {
+                scroll.style.display = 'block';
                 for (j = 0; j < content.length; j++) {
                     content[j].style.display = 'block';
                 }
@@ -25,11 +28,14 @@ for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = document.getElementsByClassName('contentVerbose');
+            var scroll = document.getElementById('scrollVerbose');
             if (content[0].style.display === "block") {
+                scroll.style.display = 'none';
                 for (j = 0; j < content.length; j++) {
                     content[j].style.display = 'none';
                 }
             } else {
+                scroll.style.display = 'block';
                 for (j = 0; j < content.length; j++) {
                     content[j].style.display = 'block';
                 }

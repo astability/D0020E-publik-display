@@ -44,8 +44,8 @@ namespace HtmlLayout.Pages
                 loggedIn = "false";
             }
             slideshow = new string[] { "ALabb1.jpg", "ALabb2.jpg", "ALabb3.jpg",
-                "ALabb4.jpg", "ALabb5.jpg" };
-            texts = new string[] { "ALabb1.txt", "ALabb2.txt", "ALabb3.txt", "ALabb4.txt", "ALabb5.txt" };
+                "ALabb4.jpg", "ALabb5.jpg","ALabb6.jpg", "ALabb7.jpg"};
+            texts = new string[] { "ALabb1.txt", "ALabb2.txt", "ALabb3.txt", "ALabb4.txt", "ALabb5.txt", "ALabb6.txt", "ALabb7.txt"};
             for (var i = 0; i < texts.Length; i++)
             {
                 var filePath = "/wwwroot/imageText/" + texts[i];

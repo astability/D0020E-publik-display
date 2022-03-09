@@ -65,16 +65,15 @@ a:visited {
 /* Home css*/
 .infoPic {
     background-color: cornflowerblue;
-    height: 70vh;
+    height: 80vh;
     width: calc(100vw - 14vw);
     position: relative;
 }
 
 
-
     .infoPic > img {
         object-fit: fill;
-        height: 70vh;
+        height: 80vh;
         width: auto;
     }
 
@@ -85,7 +84,7 @@ a:visited {
 
     .slides > img {
         object-fit: fill;
-        height: 70vh;
+        height: 80vh;
         width: auto;
     }
 
@@ -142,15 +141,15 @@ a:visited {
 .loginPopup {
     display: none;
     position: fixed;
-    top:0;
-    right:280px;
+    top: 0;
+    right: 280px;
     border: 3px solid #f1f1f1;
     z-index: 9;
 }
 
-.loginPopup > h1, p {
-    font-family: system-ui;
-}
+    .loginPopup > h1, p {
+        font-family: system-ui;
+    }
 
 /* Add styles to the form container */
 .loginContainer {
@@ -159,42 +158,42 @@ a:visited {
     background-color: white;
 }
 
-/* Full-width input fields */
-.loginContainer input[type=text], .loginContainer input[type=password] {
-    width: 85%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-}
+    /* Full-width input fields */
+    .loginContainer input[type=text], .loginContainer input[type=password] {
+        width: 85%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
 
-    /* When the inputs get focus, do something */
-.loginContainer input[type=text]:focus, .loginContainer input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
+        /* When the inputs get focus, do something */
+        .loginContainer input[type=text]:focus, .loginContainer input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
 
-/* Set a style for the submit/login button */
-.loginContainer .loginButton {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
+    /* Set a style for the submit/login button */
+    .loginContainer .loginButton {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
 
-/* Add a red background color to the cancel button */
-.loginContainer .cancel {
-    background-color: red;
-}
+    /* Add a red background color to the cancel button */
+    .loginContainer .cancel {
+        background-color: red;
+    }
 
-/* Add some hover effects to buttons */
-.loginContainer .loginButton:hover, .open-button:hover {
-    opacity: 1;
-}
+    /* Add some hover effects to buttons */
+    .loginContainer .loginButton:hover, .open-button:hover {
+        opacity: 1;
+    }
 
 
 
@@ -251,7 +250,8 @@ a:visited {
 
 /* System css*/
 .overflow {
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .systemContainer {
@@ -320,7 +320,7 @@ a:visited {
 
 .systemComponentList {
     width: calc(86vw / 2);
-    height: 70vh;
+    height: 65vh;
     border: 2px solid black;
     margin: 0px;
     padding: 10px;
@@ -421,9 +421,9 @@ h3 {
     position: relative;
 }
 
-.keyboard__key:active {
-    background: rgba(255, 255, 255, 0.12);
-}
+    .keyboard__key:active {
+        background: rgba(255, 255, 255, 0.12);
+    }
 
 .keyboard__key--wide {
     width: 12%;

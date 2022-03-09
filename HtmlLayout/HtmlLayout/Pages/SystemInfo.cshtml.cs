@@ -45,7 +45,7 @@ namespace PublikDisplay.Pages
                     var tempList = new String[] {
                     docs[i].GetValue("deviceId", null).AsString,
                     docs[i].GetValue("type", null).AsString,
-                    docs[i].GetValue("lastUpdate", null).AsString,
+                    docs[i].GetValue("lastUpdate", null).ToUniversalTime().ToString(),
                     docs[i].GetValue("deviceStatus", null).AsString,
                     };
                     devices[i] = tempList;
@@ -57,15 +57,20 @@ namespace PublikDisplay.Pages
                 logs = new string[count][];
                 for (int i = 0; i < count; i++)
                 {
-                    var tempList = new String[] {
-                    docs[i].GetValue("importance", null).AsString,
-                    docs[i].GetValue("title", null).AsString,
-                    docs[i].GetValue("deviceId", null).AsString,
-                    docs[i].GetValue("conditionStatus", null).AsString,
-                    docs[i].GetValue("statusCode", null).AsString,
-                    docs[i].GetValue("date", null).ToUniversalTime().ToString(),
-                    docs[i].GetValue("description", null).AsString,
-                    };
+                    var tempList = new String[7];
+                    tempList[0] = docs[i].GetValue("importance", null).AsString;
+                    tempList[1] = docs[i].GetValue("title", null).AsString;
+                    try
+                    {
+                        tempList[2] = docs[i].GetValue("deviceId", null).AsString;
+                    } catch (Exception ex)
+                    {
+                        tempList[2] = "-";
+                    }
+                    tempList[3] = docs[i].GetValue("conditionStatus", null).AsString;
+                    tempList[4] = docs[i].GetValue("statusCode", null).AsString;
+                    tempList[5] = docs[i].GetValue("date", null).ToUniversalTime().ToString();
+                    tempList[6] = docs[i].GetValue("description", null).AsString;
                     logs[i] = tempList;
                 }
 

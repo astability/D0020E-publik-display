@@ -1,79 +1,154 @@
-﻿@page "/System/{id?}"
+﻿@page "/System/{id}"
 @model PublikDisplay.Pages.SystemInfoModel
 @{
-    string[,] testData = {
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BTAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"TAG","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"},
-        {"BEACON","03FF5C0A2BFA3A9B", "2022-02-01", "14:34:13"}
-    };
-    string[] testConfig ={"BEACON", "TAG"};
-    int configAmount = testConfig.Length;
-    int lengthIndex = testData.GetLength(0);
-    int i = 0;
-    int j = 0;
+	int i = 0;
+	int j = 0;
 }
 
 
 <div class="mainContainer">
-    <div class="infoContainer">
-        <div class="systemInfo">
-            <p>@Model.message</p>
-            @while (j < configAmount)
-            {
-                @while (i < lengthIndex)
-                {
-                    <div class="systemContainer">
-                        @if (string.Equals(testData[i, 0], "BEACON"))
-                        {
-                            <span class="statusCircle green"></span>
-                        }
-                    </div>
-                    i++;
-                }
-            }
-        </div>
-    </div>
-    <div class="navContainer">
-        <div class="navButtonGroup">
-            <a asp-area="" asp-page="/Index">
-                <button class="buttonCurrent">
-                    <span class="material-icons bigSize">home</span>
-                    <br>Hem
-                </button>
-            </a>
-            <a asp-area="" asp-page="/System">
-                <button>
-                    <span class="material-icons bigSize">dvr</span>
-                    <br>System
-                </button>
-            </a>
-            <a asp-area="" asp-page="/Settings">
-                <button>
-                    <span class="material-icons bigSize">settings</span>
-                    <br>Inställningar
-                </button>
-            </a>
-            <a asp-area="" asp-page="/Index">
-                <button>
-                    <span class="material-icons bigSize">logout</span>
-                    <br>Logga ut
-                </button>
-            </a>
-        </div>
-    </div>
+	<div class="infoContainer">
+		<div class="splitInfo">
+			<div class="systemInfo">
+				<a asp-page="/System">
+					<span class="material-icons systemBackArrow">west</span>
+				</a>
+				<h3>System logs</h3>
+			</div>
+			<button type="button" class="collapsible">Viktiga loggar</button>
+			@while (j < Model.logs.Length)
+			{
+				if (string.Equals(@Model.logs[j][0], "Warning"))
+				{
+					<div class="contentImportant">
+						<h2>Title: @Model.logs[j][1]</h2>
+						<p>
+							EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
+							Datum: @Model.logs[j][5]
+						</p>
+						<p> Hela meddelandet: @Model.logs[j][6]</p>
+					</div>
+				}
+				else if (string.Equals(@Model.logs[j][0], "Failure"))
+				{
+					<div class="contentImportant">
+						<h2>Title: @Model.logs[j][1]</h2>
+						<p>
+							EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
+							Datum: @Model.logs[j][5]
+						</p>
+						<p> Hela meddelandet: @Model.logs[j][6]</p>
+					</div>
+				}
+				j++;
+			}
+			<button type="button" class="collapsible">Alla loggar</button>
+			@{
+				j = 0;
+			}
+			@while (j < Model.logs.Length)
+			{
+				if (!(string.Equals(@Model.logs[j][0], "Warning")) && !(string.Equals(@Model.logs[j][0], "Failure"))) 
+				{
+					<div class="contentVerbose">
+						<h2>Title: @Model.logs[j][1]</h2>
+						<p>
+							EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
+							Datum: @Model.logs[j][5]
+						</p>
+						<p> Hela meddelandet: @Model.logs[j][6]</p>
+					</div>
+				}
+				j++;
+			}
+		</div>
+		<div class="splitInfo">
+			<div class="systemInfo">
+				<div style="width:50%;height:20vh;float:left;font-family:system-ui;">
+					<h3 style="font-size:36px;margin-top:50px;">@Model.systemInfo[0]</h3>
+				</div>
+				<div style="width:50%;height:20vh;float:left;">
+					<p style="font-size:24px">Allmän status:</p>
+					@if (string.Equals(@Model.systemInfo[1], "Normal"))
+					{
+						<span class="statusCircle green" style="width:65px;height:65px;"></span>
+					}
+					else if (string.Equals(@Model.systemInfo[1], "Warning"))
+					{
+						<div class="statusCircle yellow" style="width:65px;height:65px;"></div>
+					}
+					else
+					{
+						<div class="statusCircle red" style="width:65px;height:65px;"></div>
+					}
+				</div>
+			</div>
+			<div class="systemInfo" style="height:10vh;padding-bottom:6px;">
+				<h1 style="font-size:36px;font-family:system-ui;">Enheter</h1>
+			</div>
+			<div class="systemComponentList">
+				@{
+					j = 0;
+				}
+				@while (j < @Model.deviceSorting.Length)
+				{
+					i = 0;
+					@while (i < @Model.devices.Length)
+					{
+						@if (string.Equals(@Model.devices[i][1], @Model.deviceSorting[j]))
+						{
+							<div class="systemComponent">
+								@if (string.Equals(@Model.systemInfo[1], "Normal"))
+								{
+									<span class="statusCircle green" style="width:50px;height:50px;float:left;margin-right:10px;"></span>
+								}
+								else if (string.Equals(@Model.systemInfo[1], "Warning"))
+								{
+									<div class="statusCircle yellow" style="width:50px;height:50px;float:left;margin-right:10px;"></div>
+								}
+								else
+								{
+									<div class="statusCircle red" style="width:50px;height:50px;float:left;margin-right:10px;"></div>
+								}
+								<p>
+									Typ: @Model.devices[i][1] ID: @Model.devices[i][0]<br>
+									Datum: @Model.devices[i][2]
+								</p>
+							</div>
+						}
+						i++;
+					}
+					j++;
+				}
+			</div>
+		</div>
+	</div>
+	<div class="navContainer">
+		<div class="navButtonGroup">
+			<a asp-page="/Index">
+				<button>
+					<span class="material-icons bigSize">home</span>
+					<br>Hem
+				</button>
+			</a>
+			<a asp-page="/System">
+				<button class="buttonCurrent">
+					<span class="material-icons bigSize">dvr</span>
+					<br>System
+				</button>
+			</a>
+			<a asp-page="/Settings">
+				<button>
+					<span class="material-icons bigSize">settings</span>
+					<br>Inställningar
+				</button>
+			</a>
+			<a asp-page="/Index">
+				<button>
+					<span class="material-icons bigSize">logout</span>
+					<br>Logga ut
+				</button>
+			</a>
+		</div>
+	</div>
 </div>

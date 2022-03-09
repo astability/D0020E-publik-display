@@ -1,89 +1,257 @@
 ﻿body, html {
-    padding:0px;
+    padding: 0px;
     margin: 0px;
-    height:100%;
+    height: 100%;
 }
 
 /* Layout */
 .mainContainer {
     padding: 0px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 .infoContainer {
-    width:85%;
+    width: calc(100vw - 14vw);
+    height: 100%;
     margin: 0px;
+    padding: 0px;
+}
+
+.splitInfo {
+    height: 100vh;
+    width: calc(86vw / 2);
+    margin: 0px;
+    float: left;
+    text-align: center;
 }
 
 .navContainer {
-    margin-top:50px;
-    height:100%;
-    width: 15%;
-    position: fixed;
+    height: 100%;
+    width: 14vw;
     right: 0;
     top: 0;
-    height: 100vh;
+    position: fixed;
     margin: 0px;
-    overflow:hidden;
+    overflow: hidden;
     z-index: 1;
 }
 
 .navButtonGroup button {
-    display:block;
-    width:100%;
-    height:25vh;
-    text-align:center;
+    display: block;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
     background-color: #CCC;
     border: 2px solid black;
     color: white;
-    font-size: 40px;
-    cursor:pointer;
+    font-size: 34px;
+    cursor: pointer;
     transition-duration: 0.4s;
-}
-
-.navButtonGroup button:hover {
-    background-color:hotpink;
-    color: antiquewhite;
 }
 
 a:link,
 a:visited {
-    color:white;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
 }
 
 .buttonCurrent {
-    background-color:goldenrod !important;
-    color:black !important;
+    background-color: #053159 !important;
+    color: white !important;
 }
-
-
-
-.navButtonGroup button:not(:last-child) {
-    border-bottom: none;
-}
-
 
 /* Home css*/
 .infoPic {
-    background-color:cornflowerblue;
-    height:600px;
-
+    background-color: cornflowerblue;
+    height: 70vh;
+    width: calc(100vw - 14vw);
+    position: relative;
 }
+
+
+
+    .infoPic > img {
+        object-fit: fill;
+        height: 70vh;
+        width: auto;
+    }
+
+.slides {
+    height: 100%;
+    text-align: center;
+}
+
+    .slides > img {
+        object-fit: fill;
+        height: 70vh;
+        width: auto;
+    }
 
 .infoText {
     height: auto;
-    font-size:20px;
+    font-size: 20px;
     border: 2px red;
-    background-color: papayawhip;
+    background-color: white;
 }
 
-.material-icons.bigSize{
+.material-icons.bigSize {
     font-size: 72px;
 }
 
+.material-icons.systemBackArrow {
+    line-height: 20vh;
+    color: black;
+    vertical-align: middle;
+    float: left;
+    margin-left: 20px;
+    font-size: 72px;
+}
+
+/* Slideshow */
+.slideshowButton {
+    padding: 16px;
+    margin-top: -16px;
+    user-select: none;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* Center vertically */
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.right {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The popup form - hidden by default */
+.loginPopup {
+    display: none;
+    position: fixed;
+    top:0;
+    right:280px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.loginPopup > h1, p {
+    font-family: system-ui;
+}
+
+/* Add styles to the form container */
+.loginContainer {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.loginContainer input[type=text], .loginContainer input[type=password] {
+    width: 85%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+    /* When the inputs get focus, do something */
+.loginContainer input[type=text]:focus, .loginContainer input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.loginContainer .loginButton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.loginContainer .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.loginContainer .loginButton:hover, .open-button:hover {
+    opacity: 1;
+}
+
+
+
+
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
 /* System css*/
 .overflow {
-    overflow:scroll;
+    overflow: scroll;
 }
 
 .systemContainer {
@@ -93,23 +261,23 @@ a:visited {
     float: left;
     margin-top: 25px;
     margin-bottom: 10px;
-    background-color: #F8F8F8;
+    background-color: #d3d3d3;
     padding-bottom: 20px;
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 3px;
     padding-top: 20px;
-    border-bottom: 4px solid #6DC7D0;
+    border-bottom: 4px solid #053159;
 }
 
-.systemContainer > p {
-    color:GrayText;
-    font-size: 16px;
-}
+    .systemContainer > p {
+        color: GrayText;
+        font-size: 16px;
+    }
 
 .statusCircle {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     border: 2px solid black;
     display: inline-block;
@@ -125,4 +293,162 @@ a:visited {
 
 .green {
     background-color: green;
+}
+
+.systemComponent {
+    border: 2px solid black;
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 10px;
+    vertical-align: middle;
+    background-color: GrayText;
+}
+
+.systemInfo {
+    height: 20vh;
+    border: 2px black solid;
+}
+
+    .systemInfo > h3 {
+        font-size: 36px;
+        font-family: system-ui;
+        float: right;
+        vertical-align: middle;
+        line-height: 19vh;
+        margin: 0 30% 0 0;
+    }
+
+.systemComponentList {
+    width: calc(86vw / 2);
+    height: 70vh;
+    border: 2px solid black;
+    margin: 0px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.systemLogs {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    background-color: azure;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+/* JAVACOPYPASTA*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+        background-color: #ccc;
+    }
+
+/* Style the collapsible content. Note: hidden by default */
+.contentImportant, .contentVerbose {
+    padding: 0 18px;
+    display: none;
+    background-color: GrayText;
+    border: 2px dotted black;
+    padding: 10px;
+}
+
+
+/* Virtual keyboard CSS */
+h1 {
+    color: #053159;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 2px;
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: rgb(5, 49, 89);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+}
+
+.keyboard--hidden {
+    bottom: -100%;
+}
+
+.keyboard__keys {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.keyboard__key:active {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.keyboard__key--wide {
+    width: 12%;
+}
+
+.keyboard__key--extra-wide {
+    width: 36%;
+    max-width: 500px;
+}
+
+.keyboard__key--activatable::after {
+    content: "";
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: rgb(133, 216, 8);
+}
+
+.keyboard__key--dark {
+    background: rgba(0, 0, 0, 0.25);
 }

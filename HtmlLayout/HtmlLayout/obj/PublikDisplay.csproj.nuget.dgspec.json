@@ -43,9 +43,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "LibUsbDotNet": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
             "M2Mqtt": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",

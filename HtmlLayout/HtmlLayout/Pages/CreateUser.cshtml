@@ -1,0 +1,66 @@
+﻿@page
+@model PublikDisplay.Pages.CreateUserModel
+@{
+    ViewData["Title"] = "Skapa ny användare";
+}
+
+<div class="mainContainer">
+    <div class="infoContainer">
+        <form method="post">
+            <fieldset class="addUserContainer">
+                <legend class="formTitel">Lägga till ny användare</legend>
+                <div>
+                    <label class="labelC" for="Username">Användarnamn: </label><br/>
+                    <input  class="inputC" type="text" name="userName"  placeholder="Användarnamn" required/>
+                </div>
+                <div>
+                    <label class="labelC" for="Password">Lösenord: </label><br/>
+                    <input class="inputC" type="password" name="Password" placeholder="Lösenord" required/>
+                </div>
+                <div>
+                    <label class="labelC" for="Role">Roll: </label><br/>
+                    <select name="Role">
+                        <option value="staff">Personal</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <input class="buttonC" type="submit"  value="Lägga till ny användare" asp-page-handler="Submit"/>
+               
+            </fieldset>
+        </form>
+    @if (TempData["Msg"] != null)
+{
+    <div class="msg">
+        <p><strong>@TempData["Msg"].ToString()</strong></p>
+    </div>
+}
+
+    </div>
+    <div class="navContainer">
+        <div class="navButtonGroup">
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">home</span>
+                    <br>Hem
+                </button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/System">
+                <button>
+                    <span class="material-icons bigSize">dvr</span>
+                    <br>System
+                </button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/Settings">
+                <button class="buttonCurrent">
+                    <span class="material-icons bigSize">settings</span>
+                    <br>Inställningar
+                </button>
+            </a>
+            <a class="navbar-brand" id="logoutBtn" asp-page="Index" asp-page-handler="LogoutBtn">
+                <button>
+                    <span class="material-icons bigSize">logout</span>
+                    <br>Logga ut
+                </button>
+            </a>
+        </div>
+</div>

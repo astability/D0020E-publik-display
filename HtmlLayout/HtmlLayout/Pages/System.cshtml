@@ -34,25 +34,25 @@
     </div>
     <div class="navContainer">
         <div class="navButtonGroup">
-            <a asp-area="" asp-page="/Index">
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
                 <button>
                     <span class="material-icons bigSize">home</span>
                     <br>Hem
                 </button>
             </a>
-            <a asp-area="" asp-page="/System">
+            <a class="navbar-brand" asp-area="" asp-page="/System">
                 <button class="buttonCurrent">
                     <span class="material-icons bigSize">dvr</span>
                     <br>System
                 </button>
             </a>
-            <a asp-area="" asp-page="/Settings">
+            <a class="navbar-brand" asp-area="" asp-page="/Settings">
                 <button>
                     <span class="material-icons bigSize">settings</span>
                     <br>Inställningar
                 </button>
             </a>
-            <a class="navbar-brand" asp-area="" asp-page="/Index">
+            <a class="navbar-brand" id="logoutBtn" asp-page="Index" asp-page-handler="LogoutBtn">
                 <button>
                     <span class="material-icons bigSize">logout</span>
                     <br>Logga ut

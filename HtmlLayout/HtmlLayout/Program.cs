@@ -22,7 +22,7 @@ namespace HtmlLayout
             //  2) Setup monitioring
             //  3) Start site host
 
-            var client = new MongoClient("mongodb://localhost");
+            /* var client = new MongoClient("mongodb://localhost");
             var db = client.GetDatabase("display");
             var systemsList = db.GetCollection<BsonDocument>("systems").Find("{ }").ToList();
             
@@ -43,7 +43,7 @@ namespace HtmlLayout
                         throw new InvalidOperationException("Failed to find parse provided system type.");
                 }
                 monitors.Add(newMonitor);
-            }
+            } */
 
             CreateHostBuilder(args).Build().Run();
         }

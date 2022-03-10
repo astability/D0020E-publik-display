@@ -1,39 +1,56 @@
 ﻿@page
 @model PublikDisplay.Pages.SettingsModel
 @{
-    ViewData["Title"] = "Settings";
+	ViewData["Title"] = "Settings";
 }
 
 <div class="mainContainer">
-    <div class="infoContainer">
-        <p> Här kommer det finnas inställningar senare</p>
-    </div>
-    <div class="navContainer">
-        <div class="navButtonGroup">
-            <a asp-area="" asp-page="/Index">
-                <button>
-                    <span class="material-icons bigSize">home</span>
-                    <br>Hem
-                </button>
-            </a>
-            <a asp-area="" asp-page="/System">
-                <button>
-                    <span class="material-icons bigSize">dvr</span>
-                    <br>System
-                </button>
-            </a>
-            <a asp-area="" asp-page="/Settings">
-                <button class="buttonCurrent">
-                    <span class="material-icons bigSize">settings</span>
-                    <br>Inställningar
-                </button>
-            </a>
-            <a asp-area="" asp-page="/Index">
-                <button>
-                    <span class="material-icons bigSize">logout</span>
-                    <br>Logga ut
-                </button>
-            </a>
-        </div>
-    </div>
+	<div class="infoContainer overflow">
+		<a href="/AllUsers">
+			<div class="systemContainer">
+				<span class="material-icons bigSize" style="color:black;">people</span>
+				<h2 style="color:black;font-family:system-ui;">Användare</h2>
+			</div>
+		</a>
+		<a href="/Allimages">
+			<div class="systemContainer">
+				<span class="material-icons bigSize" style="color:black;">slideshow</span>
+				<h2 style="color:black;font-family:system-ui;">Bildspel</h2>
+			</div>
+		</a>
+		<a href="/Settings/Systems">
+			<div class="systemContainer">
+				<span class="material-icons bigSize" style="color:black;">settings</span>
+				<h2 style="color:black;font-family:system-ui;">Systeminställningar</h2>
+			</div>
+		</a>
+	</div>
+	<div class="navContainer">
+		<div class="navButtonGroup">
+			<a class="navbar-brand" asp-area="" asp-page="/Index">
+				<button>
+					<span class="material-icons bigSize">home</span>
+					<br>Hem
+				</button>
+			</a>
+			<a class="navbar-brand" asp-area="" asp-page="/System">
+				<button>
+					<span class="material-icons bigSize">dvr</span>
+					<br>System
+				</button>
+			</a>
+			<a class="navbar-brand" asp-area="" asp-page="/Settings">
+				<button class="buttonCurrent">
+					<span class="material-icons bigSize">settings</span>
+					<br>Inställningar
+				</button>
+			</a>
+			<a class="navbar-brand" id="logoutBtn" asp-page="Index" asp-page-handler="LogoutBtn">
+				<button>
+					<span class="material-icons bigSize">logout</span>
+					<br>Logga ut
+				</button>
+			</a>
+		</div>
+	</div>
 </div>

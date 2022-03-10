@@ -1,0 +1,58 @@
+﻿@page
+@model PublikDisplay.Pages.AllimagesModel
+@{
+}
+<div class="mainContainer">
+	<div class="infoContainer">
+		<a asp-area="" asp-page="/addImage"><button class="buttonC" style="margin-left:40%; margin-bottom: 35px; margin-top:35px;">Lägga till ny bildspel</button></a>
+
+		<table id="tableC">
+			<tr>
+				<th>Bildnamn</th>
+				<th>Bild</th>
+				<th>Beskrivning</th>
+				<th>Alternativ</th>
+			</tr>
+			@for (int i = 0; i < Model.imagesCount; i++)
+			{
+				<tr>
+					<td>@Model.imageName[i]</td>
+					<td><img style="height:75px; width:75px;" src="~/images/@Model.imageArray[i]" alt="@Model.imageName[i]" /></td>
+					<td>@Model.imageText[i]</td>
+					<td>
+						<a style="color:#053159;" asp-page="Editimage" asp-page-handler="Delete" asp-route-name="@Model.imageName[i]">Ta bort</a>
+					</td>
+
+				</tr>
+				<br>
+			}
+		</table>
+	</div>
+	<div class="navContainer">
+		<div class="navButtonGroup">
+			<a asp-area="" asp-page="/Index">
+				<button>
+					<span class="material-icons bigSize">home</span>
+					<br>Hem
+				</button>
+			</a>
+			<a asp-area="" asp-page="/System">
+				<button>
+					<span class="material-icons bigSize">dvr</span>
+					<br>System
+				</button>
+			</a>
+			<a asp-area="" asp-page="/Settings">
+				<button class="buttonCurrent">
+					<span class="material-icons bigSize">settings</span>
+					<br>Inställningar
+				</button>
+			</a>
+			<a asp-area="" asp-page="/Index">
+				<button>
+					<span class="material-icons bigSize">logout</span>
+					<br>Logga ut
+				</button>
+			</a>
+		</div>
+	</div>

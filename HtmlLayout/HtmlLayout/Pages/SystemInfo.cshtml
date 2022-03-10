@@ -31,6 +31,10 @@
 					if (string.Equals(@Model.logs[j][3], "Ongoing"))
 					{
 						<div class="contentImportant">
+						<form asp-page-handler="solve" method="post">
+							<button class="removeLog">Flytta till lösta problem</button> 
+							<input type="hidden" name="logId" value=@Model.logIds[j]/>
+						</form>
 							<h2>Title: @Model.logs[j][1]</h2>
 							<p>
 								EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
@@ -55,6 +59,10 @@
 					if (string.Equals(@Model.logs[j][3], "OneTime") || (string.Equals(@Model.logs[j][3], "Ended")))
 					{
 						<div class="contentSolved">
+							<form asp-page-handler="hide" method="post">
+								<button class="removeLog">Flytta till alla loggar</button> 
+								<input type="hidden" name="logId" value=@Model.logIds[j]/>
+							</form>
 							<h2>Title: @Model.logs[j][1]</h2>
 							<p>
 								EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]

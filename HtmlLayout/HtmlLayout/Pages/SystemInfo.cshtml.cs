@@ -8,6 +8,8 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Microsoft.AspNetCore.Http;
+using System.Reflection.Metadata;
+using System.Security.Cryptography;
 
 namespace PublikDisplay.Pages
 {
@@ -18,6 +20,7 @@ namespace PublikDisplay.Pages
         public string[][] devices;
         public string[][] deviceState;
         public string[][] logs;
+        public string[] logIds;
         public string[] systemInfo;
         public void OnGet([FromRoute] int? id)
         {
@@ -58,12 +61,12 @@ namespace PublikDisplay.Pages
                 docs[i].GetValue("deviceStatus", null).AsString,
                 };
                 devices[i] = tempList;
-                // Försök lägga till batteri
             }
             collection = db.GetCollection<BsonDocument>(system.GetValue("collectionName", null).AsString + "Logs");
             docs = collection.Find(new BsonDocument()).ToList();
             count = collection.CountDocuments(new BsonDocument());
             logs = new string[count][];
+            logIds = new string[count];
             for (int i = 0; i < count; i++)
             {
                 var tempList = new String[7];
@@ -82,12 +85,58 @@ namespace PublikDisplay.Pages
                 tempList[5] = docs[i].GetValue("date", null).ToUniversalTime().ToString();
                 tempList[6] = docs[i].GetValue("description", null).AsString;
                 logs[i] = tempList;
+                var tempString = docs[i].GetValue("_id", null).ToString();
+                Console.WriteLine(tempString);
+                logIds[i] = tempString.TrimStart('/');
+                Console.WriteLine(tempString);
+                Console.WriteLine(logs[i]);
             }
         }
 
-        public void OnGetSolved()
+        public void OnPostSolve([FromRoute] int? id, string logId)
         {
+            var dbClient = new MongoClient("mongodb://localhost:27017");
+            IMongoDatabase db = dbClient.GetDatabase("display");
 
+            var collection = db.GetCollection<BsonDocument>("systems");
+            var filter = Builders<BsonDocument>.Filter.Eq("systemId", id);
+            var system = collection.Find(filter).FirstOrDefault();
+            if (system != null)
+            {
+                collection = db.GetCollection<BsonDocument>(system.GetValue("collectionName", null).AsString + "Logs");
+                filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(logId.Remove(logId.Length - 1, 1)));
+                var document = collection.Find(filter).FirstOrDefault();
+                if (document != null)
+                {
+                    var update = Builders<BsonDocument>.Update.Set("conditionStatus", "Ended");
+                    var options = new UpdateOptions { IsUpsert = true };
+                    collection.UpdateOne(filter, update, options);
+                }
+            }
+            OnGet(id);
+        }
+
+        public void OnPostHide([FromRoute] int? id, string logId)
+        {
+            var dbClient = new MongoClient("mongodb://localhost:27017");
+            IMongoDatabase db = dbClient.GetDatabase("display");
+
+            var collection = db.GetCollection<BsonDocument>("systems");
+            var filter = Builders<BsonDocument>.Filter.Eq("systemId", id);
+            var system = collection.Find(filter).FirstOrDefault();
+            if (system != null)
+            {
+                collection = db.GetCollection<BsonDocument>(system.GetValue("collectionName", null).AsString + "Logs");
+                filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(logId.Remove(logId.Length - 1, 1)));
+                var document = collection.Find(filter).FirstOrDefault();
+                if (document != null)
+                {
+                    var update = Builders<BsonDocument>.Update.Set("conditionStatus", "Hidden");
+                    var options = new UpdateOptions { IsUpsert = true };
+                    collection.UpdateOne(filter, update, options);
+                }
+            }
+            OnGet(id);
         }
     }
 }

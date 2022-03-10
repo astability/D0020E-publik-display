@@ -254,6 +254,14 @@ a:visited {
     overflow-y: scroll;
 }
 
+.removeLog {
+    background-color: #e7e7e7;
+    border: 1px black;
+    display: inline-block;
+    text-align:center;
+    font-size: 24px;
+}
+
 .systemContainer {
     width: 23%;
     height: 20%;
@@ -457,7 +465,7 @@ h3 {
 /* Users */
 .addUserContainer {
     width: 30%;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left: 35%;
     background-color: #053159 !important;
     color: #fff;

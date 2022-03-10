@@ -16,7 +16,7 @@
 
     public enum deviceStatus
     {
-        Normal,
+        Normal = 0,
         Warning,
         Failure
     }

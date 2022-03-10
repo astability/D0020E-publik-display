@@ -462,3 +462,4 @@ C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Deb
 C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\PublikDisplay.Views.pdb
 C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\PublikDisplay.csproj.CopyComplete
 C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\PublikDisplay.genruntimeconfig.cache
+C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\bin\Debug\net5.0\LibUsbDotNet.LibUsbDotNet.dll

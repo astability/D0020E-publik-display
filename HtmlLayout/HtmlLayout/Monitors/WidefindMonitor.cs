@@ -23,7 +23,7 @@ namespace PublikDisplay.Monitors
 
         private IMongoCollection<BsonDocument> logsCollection;
         private IMongoCollection<BsonDocument> deviceCollection;
-        private IMongoCollection<BsonDocument> systemCollection;
+        private IMongoCollection<BsonDocument> systemCollection; // TODO: replace all uses of this with a cursor.
 
         private System.Timers.Timer timeoutCheckTimer;
         private System.Timers.Timer messageTimeoutTimer;
@@ -53,7 +53,7 @@ namespace PublikDisplay.Monitors
 
             try
             {
-                reader = new WidefindReader();
+                reader = new FakeWidefindReader();
                 reader.OnMessage += handleMessage;
                 reader.OnError += handleError;
                 reader.OnConnectionFailure += handleConnFail;
@@ -259,6 +259,23 @@ namespace PublikDisplay.Monitors
                 deviceCollection.ReplaceOne("{ \"deviceId\": \"" + msg.deviceId + "\" }", newDevice);
                 
             }
+
+            // Horrid hackiness pt.2!
+            // Look through the device list to decide on the final systemStatus value
+            List<BsonDocument> devices = deviceCollection.Find("{}").ToList<BsonDocument>();
+            deviceStatus worstCondition = deviceStatus.Normal;
+            foreach (var device in devices)
+            {
+                deviceStatus parsed = Enum.Parse<deviceStatus>(device.GetValue("deviceStatus").AsString);
+                if (parsed > worstCondition)
+                {
+                    worstCondition = parsed;
+                }
+            }
+            systemCollection.UpdateOne("{ \"systemId\": " + SystemId + " }", "{ \"$set\":{\"systemStatus\":\"" + worstCondition.ToString() + "\"}}");
+
+
+
         }
 
         private void handleError(object sender, WidefindMsgEventArgs e)

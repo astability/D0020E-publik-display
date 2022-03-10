@@ -121,7 +121,20 @@ namespace PublikDisplay.Monitors
                     deviceDoc.Add("deviceStatus", status.ToString());
                     deviceCollection.InsertOne(deviceDoc);
                 }
-                
+
+                List<BsonDocument> deviceList = deviceCollection.Find("{}").ToList<BsonDocument>();
+                deviceStatus worstCondition = deviceStatus.Normal;
+                foreach (var device in deviceList)
+                {
+                    deviceStatus parsed = Enum.Parse<deviceStatus>(device.GetValue("deviceStatus").AsString);
+                    if (parsed > worstCondition)
+                    {
+                        worstCondition = parsed;
+                    }
+                }
+                systemCollection.UpdateOne("{ \"systemId\": " + SystemId + " }", "{ \"$set\":{\"systemStatus\":\"" + worstCondition.ToString() + "\"}}");
+
+
             }
             catch (System.Net.WebException ex)
             {

@@ -1,0 +1,55 @@
+﻿@page "/SystemSettings/{id}"
+@model PublikDisplay.Pages.SystemSettings
+@{
+    int a = 10;
+}
+<div class="mainContainer">
+    <div class="infoContainer">
+        <h1 class="headerText">Systeminställningar</h1>
+        <span class="headerText">System @Model.systemId: @Model.HumanName</span>
+        <form id="settingsForm" method="post">
+            <table>
+                <tbody>
+                    @foreach (var item in Model.tableRows)
+                    {
+                     <tr>
+                        <td>@item.Name</td>
+                        <td><input name="@item.Name" value="@item.Value" type="@item.InputType"/></td>
+                     </tr>   
+                    }
+                </tbody>
+            </table>
+            <i style="font-family: system-ui;">Vissa inställningar kan kräva omstart av system för att verkställas.</i>
+            <input type="submit" value="Spara" style="display:block" asp-page-handler="Submit"/>
+        </form>
+        
+    </div>
+    <div class="navContainer">
+        <div class="navButtonGroup">
+            <a asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">home</span>
+                    <br>Hem
+                </button>
+            </a>
+            <a asp-area="" asp-page="/System">
+                <button>
+                    <span class="material-icons bigSize">dvr</span>
+                    <br>System
+                </button>
+            </a>
+            <a asp-area="" asp-page="/Settings">
+                <button class="buttonCurrent">
+                    <span class="material-icons bigSize">settings</span>
+                    <br>Inställningar
+                </button>
+            </a>
+            <a asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">logout</span>
+                    <br>Logga ut
+                </button>
+            </a>
+        </div>
+    </div>
+</div>

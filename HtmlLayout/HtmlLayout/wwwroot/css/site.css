@@ -35,7 +35,6 @@
     position: fixed;
     margin: 0px;
     overflow: hidden;
-    z-index: 1;
 }
 
 .navButtonGroup button {
@@ -451,4 +450,32 @@ h3 {
 
 .keyboard__key--dark {
     background: rgba(0, 0, 0, 0.25);
+}
+
+/* Systems page */
+.headerText {
+    font-family: system-ui;
+    margin-left: 20px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#settingsForm {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#settingsForm > table {
+    border-collapse: collapse;
+}
+
+#settingsForm td {
+    border: 1px solid black;
+    padding: 10px 15px;
+    text-align: left;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#settingsForm > table input{
+    width: 175px;
 }

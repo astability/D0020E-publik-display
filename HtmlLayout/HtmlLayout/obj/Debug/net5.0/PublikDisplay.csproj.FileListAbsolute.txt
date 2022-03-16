@@ -465,3 +465,4 @@ C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Deb
 C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\bin\Debug\net5.0\LibUsbDotNet.LibUsbDotNet.dll
 C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\bin\Debug\net5.0\package-lock.json
 C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\bin\Debug\net5.0\package.json
+C:\Users\Alfred\Source\Repos\D0020E-publik-display\HtmlLayout\HtmlLayout\obj\Debug\net5.0\Razor\Pages\SystemSettings.cshtml.g.cs

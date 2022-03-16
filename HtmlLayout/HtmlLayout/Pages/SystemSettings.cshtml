@@ -1,7 +1,6 @@
 ﻿@page "/SystemSettings/{id}"
 @model PublikDisplay.Pages.SystemSettings
 @{
-    int a = 10;
 }
 <div class="mainContainer">
     <div class="infoContainer">
@@ -14,7 +13,7 @@
                     {
                      <tr>
                         <td>@item.Name</td>
-                        <td><input name="@item.Name" value="@item.Value" type="@item.InputType"/></td>
+                        <td><input class="use-keyboard-input" name="@item.Name" value="@item.Value" type="@item.InputType"/></td>
                      </tr>   
                     }
                 </tbody>
@@ -24,6 +23,9 @@
         </form>
         
     </div>
+    <script src="~/js/keyboard.js"></script>
+    <div class=keyboard></div>
+
     <div class="navContainer">
         <div class="navButtonGroup">
             <a asp-area="" asp-page="/Index">

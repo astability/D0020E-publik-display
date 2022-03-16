@@ -39,25 +39,22 @@ namespace HtmlLayout.Pages
         {
             loggedIn = HttpContext.Session.GetString("loggedIn");
             loginMessage = HttpContext.Session.GetString("loginMessage");
-            if (loggedIn == null)
+            if (loggedIn is null)
             {
-                loggedIn = "false";
+                HttpContext.Session.SetString("loggedIn", "false");
+                loggedIn = HttpContext.Session.GetString("loggedIn");
             }
-            slideshow = new string[] { "ALabb1.jpg", "ALabb2.jpg", "ALabb3.jpg",
-                "ALabb4.jpg", "ALabb5.jpg" };
-            texts = new string[] { "ALabb1.txt", "ALabb2.txt", "ALabb3.txt", "ALabb4.txt", "ALabb5.txt" };
-            for (var i = 0; i < texts.Length; i++)
+            var dbClient = new MongoClient("mongodb://localhost:27017");
+            IMongoDatabase db = dbClient.GetDatabase("display");
+            var collection = db.GetCollection<BsonDocument>("slideshow");
+            var docs = collection.Find(new BsonDocument()).ToList();
+            var count = collection.CountDocuments(new BsonDocument());
+            slideshow = new string[count];
+            texts = new string[count];
+            for (var i = 0; i < count; i++)
             {
-                var filePath = "/wwwroot/imageText/" + texts[i];
-                filePath = System.IO.Directory.GetCurrentDirectory() + filePath;
-                if (System.IO.File.Exists(filePath))
-                {
-                    texts[i] = System.IO.File.ReadAllText(filePath);
-                }
-                else
-                {
-                    texts[i] = "Filen " + texts[i] + " kunde inte hittas";
-                }
+                slideshow[i] = docs[i].GetValue("image").AsString;
+                texts[i] = docs[i].GetValue("text").AsString;
             }
             if(loggedIn == "false")
             {
@@ -78,7 +75,7 @@ namespace HtmlLayout.Pages
 
         private void loginBtn()
         {
-            var dbClient = new MongoClient("mongodb://127.0.0.1:27017");
+            var dbClient = new MongoClient("mongodb://localhost:27017");
             IMongoDatabase db = dbClient.GetDatabase("display");
 
             var collection = db.GetCollection<BsonDocument>("users");

@@ -64,16 +64,15 @@ a:visited {
 /* Home css*/
 .infoPic {
     background-color: cornflowerblue;
-    height: 70vh;
+    height: 85vh;
     width: calc(100vw - 14vw);
     position: relative;
 }
 
 
-
     .infoPic > img {
         object-fit: fill;
-        height: 70vh;
+        height: 85vh;
         width: auto;
     }
 
@@ -84,7 +83,7 @@ a:visited {
 
     .slides > img {
         object-fit: fill;
-        height: 70vh;
+        height: 85vh;
         width: auto;
     }
 
@@ -141,15 +140,15 @@ a:visited {
 .loginPopup {
     display: none;
     position: fixed;
-    top:0;
-    right:280px;
+    top: 0;
+    right: 280px;
     border: 3px solid #f1f1f1;
     z-index: 9;
 }
 
-.loginPopup > h1, p {
-    font-family: system-ui;
-}
+    .loginPopup > h1, p {
+        font-family: system-ui;
+    }
 
 /* Add styles to the form container */
 .loginContainer {
@@ -158,42 +157,42 @@ a:visited {
     background-color: white;
 }
 
-/* Full-width input fields */
-.loginContainer input[type=text], .loginContainer input[type=password] {
-    width: 85%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-}
+    /* Full-width input fields */
+    .loginContainer input[type=text], .loginContainer input[type=password] {
+        width: 85%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
 
-    /* When the inputs get focus, do something */
-.loginContainer input[type=text]:focus, .loginContainer input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
+        /* When the inputs get focus, do something */
+        .loginContainer input[type=text]:focus, .loginContainer input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
 
-/* Set a style for the submit/login button */
-.loginContainer .loginButton {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
+    /* Set a style for the submit/login button */
+    .loginContainer .loginButton {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
 
-/* Add a red background color to the cancel button */
-.loginContainer .cancel {
-    background-color: red;
-}
+    /* Add a red background color to the cancel button */
+    .loginContainer .cancel {
+        background-color: red;
+    }
 
-/* Add some hover effects to buttons */
-.loginContainer .loginButton:hover, .open-button:hover {
-    opacity: 1;
-}
+    /* Add some hover effects to buttons */
+    .loginContainer .loginButton:hover, .open-button:hover {
+        opacity: 1;
+    }
 
 
 
@@ -250,7 +249,16 @@ a:visited {
 
 /* System css*/
 .overflow {
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.removeLog {
+    background-color: #e7e7e7;
+    border: 1px black;
+    display: inline-block;
+    text-align:center;
+    font-size: 24px;
 }
 
 .systemContainer {
@@ -319,7 +327,7 @@ a:visited {
 
 .systemComponentList {
     width: calc(86vw / 2);
-    height: 70vh;
+    height: 65vh;
     border: 2px solid black;
     margin: 0px;
     padding: 10px;
@@ -357,12 +365,13 @@ a:visited {
     }
 
 /* Style the collapsible content. Note: hidden by default */
-.contentImportant, .contentVerbose {
+.contentImportant, .contentVerbose, .contentSolved {
     padding: 0 18px;
     display: none;
     background-color: GrayText;
     border: 2px dotted black;
     padding: 10px;
+    word-break:break-all;
 }
 
 
@@ -420,9 +429,9 @@ h3 {
     position: relative;
 }
 
-.keyboard__key:active {
-    background: rgba(255, 255, 255, 0.12);
-}
+    .keyboard__key:active {
+        background: rgba(255, 255, 255, 0.12);
+    }
 
 .keyboard__key--wide {
     width: 12%;
@@ -479,3 +488,94 @@ h3 {
 #settingsForm > table input{
     width: 175px;
 }
+/* Users */
+.addUserContainer {
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 35%;
+    background-color: #053159 !important;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.labelC {
+    margin: 15px;
+}
+
+.inputC {
+    margin: 15px;
+    padding: 15px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.buttonC {
+    padding: 18px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #053159 !important;
+    font-family: Arial;
+    margin-top:20px;
+}
+
+.buttonB {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #053159 !important;
+    font-family: Arial;
+}
+
+.formTitel {
+    padding: 25px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #053159 !important;
+    color: #fff;
+    font-family: Arial;
+}
+
+.msg {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #053159;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial;
+}
+
+#tableC {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #tableC td, #tableC th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #tableC tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #tableC tr:hover {
+        background-color: #ddd;
+    }
+
+    #tableC th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #053159;
+        color: white;
+    }

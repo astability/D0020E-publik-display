@@ -2,7 +2,14 @@
 @model PublikDisplay.Pages.SystemInfoModel
 @{
 	int i = 0;
-	int j = 0;
+	int j;
+	if(Model.logs == null)
+	{
+		j = 0;
+	} else
+	{
+		j = Model.logs.Length - 1;
+	}
 }
 
 
@@ -15,57 +22,82 @@
 				</a>
 				<h3>System logs</h3>
 			</div>
-			<button type="button" class="collapsible">Viktiga loggar</button>
-			@while (j < Model.logs.Length)
+			<button type="button" class="collapsible">Pågående problem</button>
+			<div class="overflow" style="display: none; height:60vh" id="scrollImportant">
+			@while (j >= 0)
 			{
-				if (string.Equals(@Model.logs[j][0], "Warning"))
+				if (string.Equals(@Model.logs[j][0], "Warning") || (string.Equals(@Model.logs[j][0], "Failure")))
 				{
-					<div class="contentImportant">
-						<h2>Title: @Model.logs[j][1]</h2>
-						<p>
-							EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
-							Datum: @Model.logs[j][5]
-						</p>
-						<p> Hela meddelandet: @Model.logs[j][6]</p>
-					</div>
+					if (string.Equals(@Model.logs[j][3], "Ongoing"))
+					{
+						<div class="contentImportant">
+						<form asp-page-handler="solve" method="post">
+							<button class="removeLog">Flytta till lösta problem</button> 
+							<input type="hidden" name="logId" value=@Model.logIds[j]/>
+						</form>
+							<h2>Title: @Model.logs[j][1]</h2>
+							<p>
+								EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
+								Datum: @Model.logs[j][5]
+							</p>
+							<p> Hela meddelandet: @Model.logs[j][6]</p>
+						</div>
+						}
 				}
-				else if (string.Equals(@Model.logs[j][0], "Failure"))
-				{
-					<div class="contentImportant">
-						<h2>Title: @Model.logs[j][1]</h2>
-						<p>
-							EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
-							Datum: @Model.logs[j][5]
-						</p>
-						<p> Hela meddelandet: @Model.logs[j][6]</p>
-					</div>
-				}
-				j++;
+				j--;
 			}
-			<button type="button" class="collapsible">Alla loggar</button>
+			</div>
+			<button type="button" class="collapsible">Lösta problem</button>
+			<div class="overflow" style="display: none;height:60vh" id="scrollSolved">
 			@{
-				j = 0;
+				j = Model.logs.Length - 1;
 			}
-			@while (j < Model.logs.Length)
+			@while (j >= 0)
 			{
-				if (!(string.Equals(@Model.logs[j][0], "Warning")) && !(string.Equals(@Model.logs[j][0], "Failure"))) 
+				if ((string.Equals(@Model.logs[j][0], "Warning")) || (string.Equals(@Model.logs[j][0], "Failure"))) 
 				{
-					<div class="contentVerbose">
-						<h2>Title: @Model.logs[j][1]</h2>
-						<p>
-							EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
-							Datum: @Model.logs[j][5]
-						</p>
-						<p> Hela meddelandet: @Model.logs[j][6]</p>
-					</div>
+					if (string.Equals(@Model.logs[j][3], "OneTime") || (string.Equals(@Model.logs[j][3], "Ended")))
+					{
+						<div class="contentSolved">
+							<form asp-page-handler="hide" method="post">
+								<button class="removeLog">Flytta till alla loggar</button> 
+								<input type="hidden" name="logId" value=@Model.logIds[j]/>
+							</form>
+							<h2>Title: @Model.logs[j][1]</h2>
+							<p>
+								EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
+								Datum: @Model.logs[j][5]
+							</p>
+							<p> Hela meddelandet: @Model.logs[j][6]</p>
+						</div>
+					}
 				}
-				j++;
+				j--;
 			}
+			</div>
+			<button type="button" class="collapsible">Alla loggar</button>
+			<div class="overflow" style="display: none;height:60vh" id="scrollVerbose">
+			@{
+				j = Model.logs.Length - 1;
+			}
+			@while (j >= 0)
+			{
+				<div class="contentVerbose">
+					<h2>Title: @Model.logs[j][1]</h2>
+					<p>
+						EnhetsID: @Model.logs[j][2] Statuskod: @Model.logs[j][4]
+						Datum: @Model.logs[j][5]
+					</p>
+					<p> Hela meddelandet: @Model.logs[j][6]</p>
+				</div>
+				j--;
+			}
+			</div>
 		</div>
 		<div class="splitInfo">
 			<div class="systemInfo">
 				<div style="width:50%;height:20vh;float:left;font-family:system-ui;">
-					<h3 style="font-size:36px;margin-top:50px;">@Model.systemInfo[0]</h3>
+					<h2 style="font-size:36px;margin-top:50px;">@Model.systemInfo[0]</h2>
 				</div>
 				<div style="width:50%;height:20vh;float:left;">
 					<p style="font-size:24px">Allmän status:</p>
@@ -84,7 +116,7 @@
 				</div>
 			</div>
 			<div class="systemInfo" style="height:10vh;padding-bottom:6px;">
-				<h1 style="font-size:36px;font-family:system-ui;">Enheter</h1>
+				<h2 style="font-size:36px;font-family:system-ui;">Enheter</h2>
 			</div>
 			<div class="systemComponentList">
 				@{
@@ -98,11 +130,11 @@
 						@if (string.Equals(@Model.devices[i][1], @Model.deviceSorting[j]))
 						{
 							<div class="systemComponent">
-								@if (string.Equals(@Model.systemInfo[1], "Normal"))
+								@if (string.Equals(@Model.devices[i][3], "Normal"))
 								{
 									<span class="statusCircle green" style="width:50px;height:50px;float:left;margin-right:10px;"></span>
 								}
-								else if (string.Equals(@Model.systemInfo[1], "Warning"))
+								else if (string.Equals(@Model.devices[i][3], "Warning"))
 								{
 									<div class="statusCircle yellow" style="width:50px;height:50px;float:left;margin-right:10px;"></div>
 								}
@@ -125,30 +157,30 @@
 	</div>
 	<div class="navContainer">
 		<div class="navButtonGroup">
-			<a asp-page="/Index">
-				<button>
-					<span class="material-icons bigSize">home</span>
-					<br>Hem
-				</button>
-			</a>
-			<a asp-page="/System">
-				<button class="buttonCurrent">
-					<span class="material-icons bigSize">dvr</span>
-					<br>System
-				</button>
-			</a>
-			<a asp-page="/Settings">
-				<button>
-					<span class="material-icons bigSize">settings</span>
-					<br>Inställningar
-				</button>
-			</a>
-			<a asp-page="/Index">
-				<button>
-					<span class="material-icons bigSize">logout</span>
-					<br>Logga ut
-				</button>
-			</a>
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">home</span>
+                    <br>Hem
+                </button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/System">
+                <button class="buttonCurrent">
+                    <span class="material-icons bigSize">dvr</span>
+                    <br>System
+                </button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/Settings">
+                <button>
+                    <span class="material-icons bigSize">settings</span>
+                    <br>Inställningar
+                </button>
+            </a>
+            <a class="navbar-brand" id="logoutBtn" asp-page="Index" asp-page-handler="LogoutBtn">
+                <button>
+                    <span class="material-icons bigSize">logout</span>
+                    <br>Logga ut
+                </button>
+            </a>
 		</div>
 	</div>
 </div>

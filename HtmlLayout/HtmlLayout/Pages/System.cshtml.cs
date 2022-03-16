@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using Microsoft.AspNetCore.Http;
 
 namespace HtmlLayout.Pages
 {
@@ -24,7 +25,11 @@ namespace HtmlLayout.Pages
 
         public void OnGet()
         {
-            var dbClient = new MongoClient("mongodb://127.0.0.1:27017");
+            if (HttpContext.Session.GetString("loggedIn") == "false")
+            {
+                Response.Redirect("/");
+            }
+            var dbClient = new MongoClient("mongodb://localhost:27017");
             IMongoDatabase db = dbClient.GetDatabase("display");
 
             var collection = db.GetCollection<BsonDocument>("systems");

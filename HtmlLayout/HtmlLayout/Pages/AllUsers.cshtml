@@ -1,0 +1,57 @@
+﻿@page 
+@model PublikDisplay.Pages.AllUsersModel
+@{
+    ViewData["Title"] = "Alla användare";
+}
+
+<div class="mainContainer">
+    <a  asp-area="" asp-page="CreateUser"><button class="buttonC" style="margin-left:40%; margin-bottom: 35px; margin-top:35px;">Lägga till ny användare</button></a>
+    
+        <table id="tableC">
+          <tr>
+            <th>Användare</th>
+            <th>Roll</th>
+            <th>Alternativ</th>
+          </tr>
+    @for(int i = 0; i < Model.userNameCount; i++){
+        <tr>
+            <td>@Model.userNameArray[i]</td>
+            <td>@Model.roleArray[i]</td>
+            <td>
+                <a style="color:#053159;" asp-page="EditUser" asp-page-handler="Edit" asp-route-name="@Model.userNameArray[i]">Ändra</a> |
+                <a style="color:#053159;" asp-page="EditUser" asp-page-handler="Delete" asp-route-name="@Model.userNameArray[i]">Ta bort</a>
+            </td>
+           
+          </tr> 
+          <br>
+        }
+    </table>
+    </div>
+    <div class="navContainer">
+        <div class="navButtonGroup">
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">home</span>
+                    <br>Hem
+                </button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/System">
+                <button>
+                    <span class="material-icons bigSize">dvr</span>
+                    <br>System
+                </button>
+            </a>
+            <a class="navbar-brand" asp-area="" asp-page="/Settings">
+                <button class="buttonCurrent">
+                    <span class="material-icons bigSize">settings</span>
+                    <br>Inställningar
+                </button>
+            </a>
+            <a class="navbar-brand" id="logoutBtn" asp-page="Index" asp-page-handler="LogoutBtn">
+                <button>
+                    <span class="material-icons bigSize">logout</span>
+                    <br>Logga ut
+                </button>
+            </a>
+        </div>
+</div>

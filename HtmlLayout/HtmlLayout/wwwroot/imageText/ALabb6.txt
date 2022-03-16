@@ -1,0 +1,1 @@
+Visualisering av personers position i rummen och deras kroppsposition (sitter, står, ligger, går) med hjälp av positioneringssystem från Vayyar och WideFind.

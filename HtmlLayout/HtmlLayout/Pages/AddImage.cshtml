@@ -1,0 +1,58 @@
+﻿@page
+@model PublikDisplay.Pages.AddImageModel
+@{
+}
+
+<div class="mainContainer">
+    <div class="infoContainer">
+        <form method="post" asp-page="addImage" enctype="multipart/form-data">
+             <fieldset class="addUserContainer">
+                <legend class="formTitel">Lägga till ny bildspel</legend>
+                <label class="labelC" for="Imagename">Bildnamn: </label><br/>
+                <input  class="inputC" type="text" name="Imagename"  placeholder="Bildnamn" required/>
+            <label> Välj bilden:</label>
+        <input type="file" name="photo" accept="/wwwroot/images" />
+        <br />
+         <label class="inputC">Beskrivning: </label><br/><br/>
+        <textarea style="height:300px; width: 350px;" asp-for="MainText"></textarea><br />
+        
+        <input class="buttonC" type="submit" value="Upload" />
+        </fieldset>
+    </form>
+    @if (TempData["Msg"] != null)
+    {
+    <div class="msg">
+        <p><strong>@TempData["Msg"].ToString()</strong></p>
+    </div>
+    }
+
+    </div>
+    <div class="navContainer">
+        <div class="navButtonGroup">
+            <a asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">home</span>
+                    <br>Hem
+                </button>
+            </a>
+            <a asp-area="" asp-page="/System">
+                <button>
+                    <span class="material-icons bigSize">dvr</span>
+                    <br>System
+                </button>
+            </a>
+            <a asp-area="" asp-page="/Settings">
+                <button class="buttonCurrent">
+                    <span class="material-icons bigSize">settings</span>
+                    <br>Inställningar
+                </button>
+            </a>
+            <a asp-area="" asp-page="/Index">
+                <button>
+                    <span class="material-icons bigSize">logout</span>
+                    <br>Logga ut
+                </button>
+            </a>
+        </div>
+    </div>
+</div>

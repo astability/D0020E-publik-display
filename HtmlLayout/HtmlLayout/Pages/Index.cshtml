@@ -22,7 +22,6 @@
             <a class="slideshowButton right" onclick="moveToSlide(1)">&#10095;</a>
         </div>
         <div class="infoText">
-            <p>@Model.loggedIn </p>
             @for (var i = 0; i < @Model.texts.Length; i++)
             {
                 <div class="texts fade">
@@ -98,7 +97,6 @@
 <script type="text/javascript">
     var slideIndex = 1;
     showSlide(slideIndex);
-    idleCheck();
 
     function moveToSlide(n) {
         showSlide(slideIndex += n);
@@ -116,27 +114,6 @@
         }
         texts[slideIndex - 1].style.display = "block";
         slides[slideIndex - 1].style.display = "block";
-    }
-
-
-    function idleCheck() {
-        var t;
-        window.onload = resetTimer;
-        window.onmousedown = resetTimer;
-        window.ontouchstart = resetTimer;
-        window.ontouchmove = resetTimer;
-        window.onclick = resetTimer;
-        window.onkeydown = resetTimer;
-        window.addEventListener('scroll', resetTimer, true);
-
-        function reload() {
-            document.getElementById('logoutBtn').click();
-        }
-
-        function resetTimer() {
-            clearTimeout(t);
-            t = setTimeout(reload, 10000);  // milliseconds
-        }
     }
 
     function openForm() {

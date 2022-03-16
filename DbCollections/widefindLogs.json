@@ -1,0 +1,807 @@
+[{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd5945a"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.775Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.61,0.0,764564,MAN,HUB*0EC7\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:06.845012200Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd5945d"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.783Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 543D85B1B2D91E29",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:543D85B1B2D91E29,0.2.7,-40,-5930,2500,4.02,-90.8,611031,MAN,SAT*E6D9\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:07.263028499Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59459"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.776Z"
+  },
+  "title": "Mottaget mqtt-meddelande från F1587D88122BE247",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"REPORT:F1587D88122BE247,0.2.7,4443,-363,488,0,0,0,4.09,-88.28,1740845*B326\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:07.223974098Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "F1587D88122BE247",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd5945c"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.783Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 6881445FDC01E3F2",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:6881445FDC01E3F2,0.2.7,3280,240,1550,4.17,-83.8,1962692,MAN,SAT*61D8\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:06.877964872Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd5945b"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.783Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.61,0.0,765566,MAN,HUB*CBD5\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:07.847835848Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59462"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.852Z"
+  },
+  "title": "Ny fyrenhet hittad 03FF5C0A2BFA3A9B",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59460"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.852Z"
+  },
+  "title": "Ny tagg hittad F1587D88122BE247",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "F1587D88122BE247",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewTag"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd5945f"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.852Z"
+  },
+  "title": "Ny fyrenhet hittad 6881445FDC01E3F2",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd5945e"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.852Z"
+  },
+  "title": "Ny fyrenhet hittad 03FF5C0A2BFA3A9B",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59461"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.852Z"
+  },
+  "title": "Ny fyrenhet hittad 543D85B1B2D91E29",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59465"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.878Z"
+  },
+  "title": "Dålig signalstyrka för F1587D88122BE247",
+  "description": "Signalstyrka för F1587D88122BE247 är dålig med en RSSI av -88,28dB",
+  "importance": "Warning",
+  "deviceId": "F1587D88122BE247",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnBadSignal"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59464"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.878Z"
+  },
+  "title": "Dålig signalstyrka för 543D85B1B2D91E29",
+  "description": "Signalstyrka för 543D85B1B2D91E29 är dålig med en RSSI av -90,8dB",
+  "importance": "Warning",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnBadSignal"
+},{
+  "_id": {
+    "$oid": "621dfbc7bf7eba2b5bd59463"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:07.878Z"
+  },
+  "title": "Dålig signalstyrka för 6881445FDC01E3F2",
+  "description": "Signalstyrka för 6881445FDC01E3F2 är dålig med en RSSI av -83,8dB",
+  "importance": "Warning",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnBadSignal"
+},{
+  "_id": {
+    "$oid": "621dfbc8bf7eba2b5bd5946b"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:08.715Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,766573,MAN,HUB*35BC\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:08.854856540Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc9bf7eba2b5bd5946c"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:09.757Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 4B2A8EE2B9BAAAC0",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:4B2A8EE2B9BAAAC0,0.2.7,4890,6110,350,4.12,-86.6,610809,MAN,SAT*7957\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:09.139936806Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbc9bf7eba2b5bd5946d"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:09.758Z"
+  },
+  "title": "Ny fyrenhet hittad 4B2A8EE2B9BAAAC0",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbc9bf7eba2b5bd5946e"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:09.760Z"
+  },
+  "title": "Dålig signalstyrka för 4B2A8EE2B9BAAAC0",
+  "description": "Signalstyrka för 4B2A8EE2B9BAAAC0 är dålig med en RSSI av -86,6dB",
+  "importance": "Warning",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnBadSignal"
+},{
+  "_id": {
+    "$oid": "621dfbcabf7eba2b5bd59470"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:10.718Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 9691FE799F371A4C",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:9691FE799F371A4C,0.2.7,5190,-5820,2500,4.12,-91.3,612499,MAN,SAT*025F\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:09.821944821Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbcabf7eba2b5bd59471"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:10.719Z"
+  },
+  "title": "Ny fyrenhet hittad 9691FE799F371A4C",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbcabf7eba2b5bd59472"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:10.721Z"
+  },
+  "title": "Dålig signalstyrka för 9691FE799F371A4C",
+  "description": "Signalstyrka för 9691FE799F371A4C är dålig med en RSSI av -91,3dB",
+  "importance": "Warning",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnBadSignal"
+},{
+  "_id": {
+    "$oid": "621dfbcbbf7eba2b5bd59474"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:11.726Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,767576,MAN,HUB*4105\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:09.858143860Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbccbf7eba2b5bd59475"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:12.717Z"
+  },
+  "title": "Mottaget mqtt-meddelande från D4984282E2E4D10B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:D4984282E2E4D10B,0.2.7,5060,540,2500,4.18,-86.6,609864,MAN,SAT*9C69\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:10.062912300Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbccbf7eba2b5bd59476"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:12.720Z"
+  },
+  "title": "Ny fyrenhet hittad D4984282E2E4D10B",
+  "description": "",
+  "importance": "Info",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "OneTime",
+  "statusCode": "InfoNewBeacon"
+},{
+  "_id": {
+    "$oid": "621dfbccbf7eba2b5bd59477"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:12.721Z"
+  },
+  "title": "Dålig signalstyrka för D4984282E2E4D10B",
+  "description": "Signalstyrka för D4984282E2E4D10B är dålig med en RSSI av -86,6dB",
+  "importance": "Warning",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnBadSignal"
+},{
+  "_id": {
+    "$oid": "621dfbcdbf7eba2b5bd59479"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:13.718Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,768570,MAN,HUB*086E\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:10.851934083Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbcebf7eba2b5bd5947a"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:14.716Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 6881445FDC01E3F2",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:6881445FDC01E3F2,0.2.7,3280,240,1550,4.17,-83.2,1966688,MAN,SAT*4A05\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:10.874069644Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbcfbf7eba2b5bd5947b"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:15.719Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 543D85B1B2D91E29",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:543D85B1B2D91E29,0.2.7,-40,-5930,2500,4.02,-91.3,615027,MAN,SAT*D739\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:11.259065604Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd0bf7eba2b5bd5947c"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:16.718Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,769572,MAN,HUB*CD7C\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:11.853975390Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd1bf7eba2b5bd5947d"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:17.720Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.61,0.0,770564,MAN,HUB*4670\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:12.846360264Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd2bf7eba2b5bd5947e"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:18.719Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 4B2A8EE2B9BAAAC0",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:4B2A8EE2B9BAAAC0,0.2.7,4890,6110,350,4.12,-85.5,614805,MAN,SAT*29AC\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:13.135985910Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd3bf7eba2b5bd5947f"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:19.713Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 9691FE799F371A4C",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:9691FE799F371A4C,0.2.7,5190,-5820,2500,4.12,-91.6,616500,MAN,SAT*18E6\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:13.822969643Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd4bf7eba2b5bd59480"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:20.718Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.61,0.0,771568,MAN,HUB*F015\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:13.850030255Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd5bf7eba2b5bd59481"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:21.720Z"
+  },
+  "title": "Mottaget mqtt-meddelande från D4984282E2E4D10B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:D4984282E2E4D10B,0.2.7,5060,540,2500,4.18,-86.6,613857,MAN,SAT*58C3\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:14.055961373Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd6bf7eba2b5bd59482"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:22.717Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.61,0.0,772565,MAN,HUB*ABB9\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:14.847016844Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd7bf7eba2b5bd59483"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:23.714Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 6881445FDC01E3F2",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:6881445FDC01E3F2,0.2.7,3280,240,1550,4.17,-82.8,1970684,MAN,SAT*C983\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:14.869984747Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd8bf7eba2b5bd59484"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:24.713Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 543D85B1B2D91E29",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:543D85B1B2D91E29,0.2.7,-40,-5930,2500,4.02,-90.9,619024,MAN,SAT*4DDC\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:15.257022728Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbd9bf7eba2b5bd59485"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:25.712Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.61,0.0,773572,MAN,HUB*7622\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:15.854011535Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbdabf7eba2b5bd59486"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:26.722Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.62,0.0,774579,MAN,HUB*2407\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:16.860945559Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbdbbf7eba2b5bd59487"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:27.727Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 4B2A8EE2B9BAAAC0",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:4B2A8EE2B9BAAAC0,0.2.7,4890,6110,350,4.12,-87.3,618797,MAN,SAT*6772\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:17.128124641Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbdcbf7eba2b5bd59488"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:28.719Z"
+  },
+  "title": "Mottaget mqtt-meddelande från F1587D88122BE247",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"REPORT:F1587D88122BE247,0.2.7,4500,-396,385,0,0,0,4.09,-87.09,1751321*D63D\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:17.700039857Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "F1587D88122BE247",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbddbf7eba2b5bd59489"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:29.713Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 9691FE799F371A4C",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:9691FE799F371A4C,0.2.7,5190,-5820,2500,4.11,-91.0,620499,MAN,SAT*9535\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:17.822024778Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbdebf7eba2b5bd5948a"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:30.720Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.62,0.0,775574,MAN,HUB*7941\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:17.856088796Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbdfbf7eba2b5bd5948b"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:31.722Z"
+  },
+  "title": "Mottaget mqtt-meddelande från D4984282E2E4D10B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:D4984282E2E4D10B,0.2.7,5060,540,2500,4.18,-86.9,617862,MAN,SAT*EA0E\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:18.060976236Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe0bf7eba2b5bd5948c"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:32.712Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.62,0.0,776566,MAN,HUB*D5FC\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:18.848030332Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe1bf7eba2b5bd5948d"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:33.709Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 6881445FDC01E3F2",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:6881445FDC01E3F2,0.2.7,3280,240,1550,4.17,-83.2,1974677,MAN,SAT*C769\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:18.863062820Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe2bf7eba2b5bd5948e"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:34.719Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 543D85B1B2D91E29",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:543D85B1B2D91E29,0.2.7,-40,-5930,2500,4.02,-91.0,623025,MAN,SAT*3D88\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:19.258018883Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe3bf7eba2b5bd5948f"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:35.723Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.62,0.0,777569,MAN,HUB*4EDD\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:19.851042649Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe4bf7eba2b5bd59490"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:36.715Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,778570,MAN,HUB*4D0D\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:20.852045612Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe5bf7eba2b5bd59491"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:37.712Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 4B2A8EE2B9BAAAC0",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:4B2A8EE2B9BAAAC0,0.2.7,4890,6110,350,4.12,-86.8,622801,MAN,SAT*48D9\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:21.132129827Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe6bf7eba2b5bd59492"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:38.717Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 9691FE799F371A4C",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:9691FE799F371A4C,0.2.7,5190,-5820,2500,4.11,-90.8,624505,MAN,SAT*3102\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:21.828101319Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe7bf7eba2b5bd59493"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:39.714Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,779572,MAN,HUB*881F\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:21.854122920Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe8bf7eba2b5bd59494"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:40.713Z"
+  },
+  "title": "Mottaget mqtt-meddelande från D4984282E2E4D10B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:D4984282E2E4D10B,0.2.7,5060,540,2500,4.18,-85.6,621858,MAN,SAT*09AA\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:22.057025340Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbe9bf7eba2b5bd59495"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:41.724Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,780567,MAN,HUB*4919\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:22.849044154Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbeabf7eba2b5bd59496"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:42.722Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 6881445FDC01E3F2",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:6881445FDC01E3F2,0.2.7,3280,240,1550,4.17,-83.0,1978677,MAN,SAT*F0D1\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:22.863101298Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "6881445FDC01E3F2",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbebbf7eba2b5bd59497"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:43.713Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 543D85B1B2D91E29",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:543D85B1B2D91E29,0.2.7,-40,-5930,2500,4.02,-92.0,627019,MAN,SAT*34F1\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:23.252152634Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "543D85B1B2D91E29",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbecbf7eba2b5bd59498"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:44.721Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.64,0.0,781569,MAN,HUB*391B\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:23.851103461Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbedbf7eba2b5bd59499"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:45.723Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.57,0.0,782576,MAN,HUB*FB7B\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:24.858049152Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbeebf7eba2b5bd5949a"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:46.711Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 4B2A8EE2B9BAAAC0",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:4B2A8EE2B9BAAAC0,0.2.7,4890,6110,350,4.12,-85.9,626803,MAN,SAT*2B3C\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:25.134174326Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbefbf7eba2b5bd5949b"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:47.723Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 9691FE799F371A4C",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:9691FE799F371A4C,0.2.7,5190,-5820,2500,4.11,-91.5,628512,MAN,SAT*30D2\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:25.836200213Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "9691FE799F371A4C",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbf0bf7eba2b5bd5949c"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:48.731Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.57,0.0,783579,MAN,HUB*605A\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:25.861202137Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbf1bf7eba2b5bd5949d"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:49.720Z"
+  },
+  "title": "Mottaget mqtt-meddelande från D4984282E2E4D10B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:D4984282E2E4D10B,0.2.7,5060,540,2500,4.18,-86.3,625864,MAN,SAT*2825\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:26.063091547Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "D4984282E2E4D10B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+},{
+  "_id": {
+    "$oid": "621dfbf2bf7eba2b5bd5949e"
+  },
+  "date": {
+    "$date": "2022-03-01T10:56:50.719Z"
+  },
+  "title": "Mottaget mqtt-meddelande från 03FF5C0A2BFA3A9B",
+  "description": "{\"host\":\"WFGATEWAY-3ABFF8D01EFF\",\"message\":\"BEACON:03FF5C0A2BFA3A9B,0.2.7,-10,280,2500,4.57,0.0,784573,MAN,HUB*8789\",\"source\":\"03FF5C0A2BFA3A9B\",\"time\":\"2022-02-02T14:25:26.855103361Z\",\"type\":\"widefind_message\"}",
+  "importance": "Verbose",
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "conditionStatus": "OneTime",
+  "statusCode": "VerboseMsg"
+}]

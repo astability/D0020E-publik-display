@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "620cbeae639c05d7031270c2"
+  },
+  "systemId": 0,
+  "humanName": "Widefind",
+  "systemType": "Widefind",
+  "collectionName": "widefind",
+  "deviceSorting": [
+    "Beacon",
+    "Tag"
+  ],
+  "settings": {
+    "mqttIp": "130.240.74.55",
+    "timeoutMs": 30000,
+    "minRssi": -95.0,
+    "minVolt": 4.0
+  },
+  "systemStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "620cd4ad639c05d7031270cd"
+  },
+  "systemId": 1,
+  "humanName": "Fibaro",
+  "systemType": "Fibaro",
+  "collectionName": "fibaro",
+  "deviceSorting": [
+    "Enhet"
+  ],
+  "settings": {
+    "updatePeriodMs": 30000,
+    "minBatteryLevel": 20,
+    "serviceUrl": "http://130.240.114.44",
+    "serviceUser": "displaytracker@NotAEmail",
+    "servicePassword": "C7cKQeNaawXeL4m@"
+  },
+  "systemStatus": "Warning"
+}]

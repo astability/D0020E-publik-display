@@ -29,7 +29,8 @@ Från
 https://stackoverflow.com/questions/20796714/how-do-i-start-mongo-db-from-windows
 
  1) Installera MongoDB Community för ditt operativsystem. Instruktioner
-    för detta kan hittas här: https://docs.mongodb.com/manual/administration/install-community/
+    för detta kan hittas här:
+    https://docs.mongodb.com/manual/administration/install-community/
 
  2) Skapa mappen där MongoDB sparar data, `C:\data\db`
 
@@ -42,9 +43,10 @@ https://stackoverflow.com/questions/20796714/how-do-i-start-mongo-db-from-window
 ### 1.2. Viktiga collections för databas
 
 Programmet förutsätter att MongoDB har en databas med namn `display` som
-har en collection `systems`. JSON-filer för dessa `systems` samt
+har en collection `systems`. JSON-filer för `systems` samt
 collections för systemen som `systems` definerar kan hittas i mappen
-<FILER HÄR>.
+DbCollections. Notera att collections som slutar med `devices` eller
+`logs` kan lämnas tomma.
 
 MongoDB Compass kan underlätta att lägga till collections.
 https://www.mongodb.com/products/compass
@@ -53,6 +55,10 @@ https://www.mongodb.com/products/compass
 Projektet måste öppnas i Visual Studio (inte Visual Studio code) för
 att kunna köras. Inga försök att köra koden utanför IDE har inte
 försökts.
+
+För att testa systemet finns följande admin-konto:
+__Användarnamn:__`testLogin`
+__Lösenord:__`admin`
 
 ## 2. Tips för vidareutveckling
 Här är ett antal allmänna tips för hur ett projekt för att vidarutveckla
@@ -85,9 +91,11 @@ Ett problem med MongoDB är att medans modifikationer till ett dokument
 är atomiska, stöds inte större transaktioner om databasen inte är
 replikerad eller shardad.
 
+Ett dokument med databasformatet finns bifogad (`mongodb format.pdf`)
+
 ### 2.3. Arkitektur
 Systemet följer MVC-modellen där frontend är view, databas är modellen,
-och en upsättning av s.k. "Monitors" som är modellen.
+och en upsättning av s.k. "Monitors" som är kontrollern.
 
 Varje monitor är ett objekt som kontinuerligt läser in data från
 sensorerna och skriver det till databasen efter det har
@@ -98,7 +106,8 @@ Monitorer får in sin data med ett system-specifikt "Reader"-objekt som
 parsar datan till ett lätthanterligt format.
 Tanken här är att objektet bytas ut med polymorfism med ett falskt
 objekt som pytsar ut förinspelad data för att kunna testa utan kontakt
-med systemet eller systemproblem som det riktiga systemet sällan har.
+med systemet eller med systemproblem som det riktiga systemet sällan
+har.
 
 ### 2.4. Allmänna koncept
 Nästintill alla system verkar kunna hanteras så här:
@@ -113,3 +122,4 @@ Nästintill alla system verkar kunna hanteras så här:
 
  * En *Händelse* (loggmeddelande) har *Typ* och *Allvarlighetsgrad* i
    samma mån som en *Kondition*, men har en exakt stund där den har hänt.
+

@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "622a230e1035d14f358318f7"
+  },
+  "pictureName": "Bild 1",
+  "image": "ALabb1.jpg",
+  "text": "Specialanpassade lösningar från Granbergs för personer med funktionsnedsättning. Köket är specialanpassat med höj- och sänkbara ytor."
+},{
+  "_id": {
+    "$oid": "622a24c7562a75d12ea5d412"
+  },
+  "pictureName": "Bild 2",
+  "image": "ALabb2.jpg",
+  "text": "Mätning av vitala funktioner (puls, andning och sömnkvalitet) med sensorer från Vayyar, Oura och Somnofy. Utprovning av tyngdtäcken och annan välfärdsteknologi."
+},{
+  "_id": {
+    "$oid": "622a2500562a75d12ea5d413"
+  },
+  "pictureName": "Bild 3",
+  "image": "ALabb3.jpg",
+  "text": "Dagliga aktiviteter bedöms och mäts exempelvis via EMG, ECG, GSR och position. Labbet är utrustat med höj- och sänkbart tvättfat samt bidétoalett med torkfunktion."
+},{
+  "_id": {
+    "$oid": "622a27f6b13c18f2628830bf"
+  },
+  "pictureName": "Bild 4",
+  "image": "ALabb4.jpg",
+  "text": "Ergonomi rådgivning och utprovning av hjälpmedel som tyngdvästar och planeringsverktyg. Studier med hjälp av glasögon med eye-tracking från Tobii, vilka tolkar vad en person ser på."
+},{
+  "_id": {
+    "$oid": "622a47c5e0513dfb6d0f88d4"
+  },
+  "pictureName": "Bild 5",
+  "image": "ALabb5.jpg",
+  "text": "Instruktion för planering av vardagliga aktiviteter och rutiner i vardagen med stöd av planeringskalender från Abilia."
+},{
+  "_id": {
+    "$oid": "622a4a210b7d753366b772ba"
+  },
+  "pictureName": "Bild 6",
+  "image": "ALabb6.jpg",
+  "text": "Visualisering av personers position i rummen och deras kroppsposition (sitter, står, ligger, går) med hjälp av positioneringssystem från Vayyar och WideFind."
+}]

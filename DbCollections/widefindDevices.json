@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "6224d822b717055230f9cb8b"
+  },
+  "state": {
+    "rssi": 0,
+    "batteryVoltage": 4.610000133514404,
+    "posX": -10,
+    "posY": 280,
+    "posZ": 2500
+  },
+  "deviceId": "03FF5C0A2BFA3A9B",
+  "type": "Beacon",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:31:57.011Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "6224d822b717055230f9cb8e"
+  },
+  "state": {
+    "rssi": -82.5,
+    "batteryVoltage": 4.090000152587891,
+    "posX": 3280,
+    "posY": 240,
+    "posZ": 1550
+  },
+  "deviceId": "6881445FDC01E3F2",
+  "type": "Beacon",
+  "lastUpdate": {
+    "$date": "2022-03-06T16:12:15.187Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "6224d822b717055230f9cb91"
+  },
+  "state": {
+    "rssi": -91.5999984741211,
+    "batteryVoltage": 4.179999828338623,
+    "posX": 5060,
+    "posY": 540,
+    "posZ": 2500
+  },
+  "deviceId": "D4984282E2E4D10B",
+  "type": "Beacon",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:31:53.523Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "6224d823b717055230f9cb96"
+  },
+  "state": {
+    "rssi": -97.19999694824219,
+    "batteryVoltage": 4.059999942779541,
+    "posX": -40,
+    "posY": -5930,
+    "posZ": 2500
+  },
+  "deviceId": "543D85B1B2D91E29",
+  "type": "Beacon",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:31:53.423Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "6224d826b717055230f9cb9c"
+  },
+  "state": {
+    "rssi": -90.5999984741211,
+    "batteryVoltage": 4.099999904632568,
+    "posX": 5190,
+    "posY": -5820,
+    "posZ": 2500
+  },
+  "deviceId": "9691FE799F371A4C",
+  "type": "Beacon",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:31:56.231Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "6227643e207d893230585c1f"
+  },
+  "state": {
+    "rssi": -83.9000015258789,
+    "batteryVoltage": 4.150000095367432,
+    "posX": 4890,
+    "posY": 6110,
+    "posZ": 350
+  },
+  "deviceId": "4B2A8EE2B9BAAAC0",
+  "type": "Beacon",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:31:51.763Z"
+  },
+  "deviceStatus": "Normal"
+}]

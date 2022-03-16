@@ -1,0 +1,817 @@
+[{
+  "_id": {
+    "$oid": "622776972931d52c441e3613"
+  },
+  "state": {
+    "name": "YR Weather",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "3",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.273Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3614"
+  },
+  "state": {
+    "name": "20",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "20",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.274Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3615"
+  },
+  "state": {
+    "name": "20.0",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "21",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.276Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3616"
+  },
+  "state": {
+    "name": "20.1",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "22",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.279Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3617"
+  },
+  "state": {
+    "name": "20.2",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "23",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.281Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3618"
+  },
+  "state": {
+    "name": "20.3",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "24",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.282Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3619"
+  },
+  "state": {
+    "name": "20.4",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "25",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.284Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e361a"
+  },
+  "state": {
+    "name": "20.5",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "26",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.286Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e361b"
+  },
+  "state": {
+    "name": "20.6",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "27",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.288Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e361c"
+  },
+  "state": {
+    "name": "20.7",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "28",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.289Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e361d"
+  },
+  "state": {
+    "name": "20.8",
+    "enabled": false,
+    "batteryLevel": null,
+    "dead": true
+  },
+  "deviceId": "29",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.291Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e361e"
+  },
+  "state": {
+    "name": "2.2 Micro",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": true
+  },
+  "deviceId": "31",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.292Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e361f"
+  },
+  "state": {
+    "name": "8.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "33",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.295Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3620"
+  },
+  "state": {
+    "name": "8.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "34",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.297Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3621"
+  },
+  "state": {
+    "name": "7.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "36",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.299Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3622"
+  },
+  "state": {
+    "name": "7.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "37",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.301Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3623"
+  },
+  "state": {
+    "name": "38",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "38",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.302Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3624"
+  },
+  "state": {
+    "name": "38.0",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "39",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.304Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3625"
+  },
+  "state": {
+    "name": "40.0",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "41",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.306Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3626"
+  },
+  "state": {
+    "name": "Dörr",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "42",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.307Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3627"
+  },
+  "state": {
+    "name": "45.0",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "46",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.309Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3628"
+  },
+  "state": {
+    "name": "Knapp",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "48",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.311Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3629"
+  },
+  "state": {
+    "name": "1.2 Kylskåp",
+    "enabled": true,
+    "batteryLevel": 45,
+    "dead": false
+  },
+  "deviceId": "50",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.314Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e362a"
+  },
+  "state": {
+    "name": "1.2 Kylskåp Termomet",
+    "enabled": true,
+    "batteryLevel": 45,
+    "dead": false
+  },
+  "deviceId": "51",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.316Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e362b"
+  },
+  "state": {
+    "name": "53.0",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "54",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.317Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e362c"
+  },
+  "state": {
+    "name": "6.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "55",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.319Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e362d"
+  },
+  "state": {
+    "name": "56.0",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "57",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.321Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e362e"
+  },
+  "state": {
+    "name": "5.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "58",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.322Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e362f"
+  },
+  "state": {
+    "name": "4.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 0,
+    "dead": false
+  },
+  "deviceId": "59",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.324Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3630"
+  },
+  "state": {
+    "name": "59.0",
+    "enabled": true,
+    "batteryLevel": 0,
+    "dead": false
+  },
+  "deviceId": "60",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.326Z"
+  },
+  "deviceStatus": "Warning"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3631"
+  },
+  "state": {
+    "name": "61.0",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "62",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.329Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3632"
+  },
+  "state": {
+    "name": "3.1 Överskåp",
+    "enabled": true,
+    "batteryLevel": 25,
+    "dead": false
+  },
+  "deviceId": "63",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.331Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3634"
+  },
+  "state": {
+    "name": "U121 Door Motion",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "65",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.333Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3635"
+  },
+  "state": {
+    "name": "U121 Door Temp",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "66",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.336Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3636"
+  },
+  "state": {
+    "name": "U121 Door Light ",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "67",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.337Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3637"
+  },
+  "state": {
+    "name": "U121 Door Humidity",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "68",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.339Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3638"
+  },
+  "state": {
+    "name": "U121 Door Multilevel",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "69",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.341Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3639"
+  },
+  "state": {
+    "name": "74 DoorWindow",
+    "enabled": true,
+    "batteryLevel": 100,
+    "dead": false
+  },
+  "deviceId": "74",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.343Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e363a"
+  },
+  "state": {
+    "name": "U120 door Motion",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "76",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.346Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e363b"
+  },
+  "state": {
+    "name": "U120 door Temp",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "77",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.349Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e363c"
+  },
+  "state": {
+    "name": "U120 door Light",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "78",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.351Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e363d"
+  },
+  "state": {
+    "name": "U120 door Humidity",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "79",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.353Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e363e"
+  },
+  "state": {
+    "name": "U120 door Multilevel",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "80",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.354Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e363f"
+  },
+  "state": {
+    "name": "U119 Bathroom Motion",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "82",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.356Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3640"
+  },
+  "state": {
+    "name": "U119 Bathroom Temp",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "83",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.358Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3641"
+  },
+  "state": {
+    "name": "U119 Bathroom Light",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "84",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.360Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3642"
+  },
+  "state": {
+    "name": "U119 Bathroom Humidity",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "85",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.363Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3643"
+  },
+  "state": {
+    "name": "U119 Bathroom Multilevel",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "86",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.364Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3644"
+  },
+  "state": {
+    "name": "HC3 <-> MQTT Bridge",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "87",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.366Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3645"
+  },
+  "state": {
+    "name": "98",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "98",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.368Z"
+  },
+  "deviceStatus": "Normal"
+},{
+  "_id": {
+    "$oid": "622776972931d52c441e3646"
+  },
+  "state": {
+    "name": "98.0",
+    "enabled": true,
+    "batteryLevel": null,
+    "dead": false
+  },
+  "deviceId": "100",
+  "type": "Enhet",
+  "lastUpdate": {
+    "$date": "2022-03-08T15:30:31.370Z"
+  },
+  "deviceStatus": "Normal"
+}]

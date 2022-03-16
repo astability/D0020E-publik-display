@@ -1,0 +1,170 @@
+[{
+  "_id": {
+    "$oid": "622776792931d52c441e359a"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.423Z"
+  },
+  "title": "Enhet 20 'död'",
+  "description": "Enhet 20 (20) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "20",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e359c"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.425Z"
+  },
+  "title": "Enhet 21 'död'",
+  "description": "Enhet 21 (20.0) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "21",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e359e"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.427Z"
+  },
+  "title": "Enhet 22 'död'",
+  "description": "Enhet 22 (20.1) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "22",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35a0"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.429Z"
+  },
+  "title": "Enhet 23 'död'",
+  "description": "Enhet 23 (20.2) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "23",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35a2"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.430Z"
+  },
+  "title": "Enhet 24 'död'",
+  "description": "Enhet 24 (20.3) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "24",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35a4"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.432Z"
+  },
+  "title": "Enhet 25 'död'",
+  "description": "Enhet 25 (20.4) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "25",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35a6"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.434Z"
+  },
+  "title": "Enhet 26 'död'",
+  "description": "Enhet 26 (20.5) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "26",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35a8"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.436Z"
+  },
+  "title": "Enhet 27 'död'",
+  "description": "Enhet 27 (20.6) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "27",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35aa"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.438Z"
+  },
+  "title": "Enhet 28 'död'",
+  "description": "Enhet 28 (20.7) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "28",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35ac"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.440Z"
+  },
+  "title": "Enhet 29 'död'",
+  "description": "Enhet 29 (20.8) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "29",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35ae"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.442Z"
+  },
+  "title": "Enhet 31 'död'",
+  "description": "Enhet 31 (2.2 Micro) har markeras som död. Enhet kan potentiellt startas om från webbgränsnitt.",
+  "importance": "Warning",
+  "deviceId": "31",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnDead"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35c0"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.470Z"
+  },
+  "title": "Batterinivå låg för enhet 59",
+  "description": "Enhet 59 (4.1 Överskåp) har en låg batterinivå på 0%.",
+  "importance": "Warning",
+  "deviceId": "59",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnLowBat"
+},{
+  "_id": {
+    "$oid": "622776792931d52c441e35c2"
+  },
+  "date": {
+    "$date": "2022-03-08T15:30:01.471Z"
+  },
+  "title": "Batterinivå låg för enhet 60",
+  "description": "Enhet 60 (59.0) har en låg batterinivå på 0%.",
+  "importance": "Warning",
+  "deviceId": "60",
+  "conditionStatus": "Ongoing",
+  "statusCode": "WarnLowBat"
+}]

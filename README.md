@@ -60,9 +60,9 @@ och innehåll som filerna.
 ### 1.3. Kör koden
 Projektet måste öppnas i Visual Studio (inte Visual Studio code) för
 att kunna köras. Inga försök att köra koden utanför IDE har inte
-försökts. Koden arbetade på i visual studio 2022, med .NET 5.0
+försökts. Koden arbetades på i visual studio 2022, med .NET 5.0
 
-För att testa systemet finns följande admin-konto:<br>
+För att testa projektet finns följande admin-konto:<br>
 __Användarnamn:__`testLogin`<br>
 __Lösenord:__`admin`
 

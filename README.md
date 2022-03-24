@@ -35,29 +35,35 @@ https://stackoverflow.com/questions/20796714/how-do-i-start-mongo-db-from-window
  2) Skapa mappen där MongoDB sparar data, `C:\data\db`
 
  3) Starta MongoDB i genom att öppna platsen där MongoDB har installerats
-    i komandoraden och kör `mongod`.
+    i kommandotolk och kör `mongod`.
     Detta är vanligtvis under
     `C:\Program Files\MongoDB\Server\<version>\bin\` där `<version>` är
     versionen av MongoDB.
 
+ 4) Om `mongodb` inte slutar köra (dvs du kan inte skriva in kommandon i
+    kommandotolk), så betyder det att databasen kör utan fel. Konsollen
+    kan nu stängas.
+
 ### 1.2. Viktiga collections för databas
-
-Programmet förutsätter att MongoDB har en databas med namn `display` som
-har en collection `systems`. JSON-filer för `systems` samt
-collections för systemen som `systems` definerar kan hittas i mappen
-DbCollections. Notera att collections som slutar med `devices` eller
-`logs` kan lämnas tomma.
-
-MongoDB Compass kan underlätta att lägga till collections.
+Om du inte har arbetat med MongoDB tidigare, bör du installera MongoDB
+Compass för att underlätta den här delen.
 https://www.mongodb.com/products/compass
+Connection string för att koppla till databasen bör vara
+`mongodb://localhost`. 
+
+Programmet förutsätter att MongoDB har en databas med namn `display` med ett
+antal collections (t.ex. `systems`). Dessa collections finns förvarade i
+mappen `DbCollections` och bör ha exakt samma namn (om vi bortser `.json`)
+och innehåll som filerna.
+
 
 ### 1.3. Kör koden
 Projektet måste öppnas i Visual Studio (inte Visual Studio code) för
 att kunna köras. Inga försök att köra koden utanför IDE har inte
-försökts.
+försökts. Koden arbetade på i visual studio 2022, med .NET 5.0
 
-För att testa systemet finns följande admin-konto:
-__Användarnamn:__`testLogin`
+För att testa systemet finns följande admin-konto:<br>
+__Användarnamn:__`testLogin`<br>
 __Lösenord:__`admin`
 
 ## 2. Tips för vidareutveckling
